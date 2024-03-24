@@ -11,12 +11,26 @@
 body{
     margin: 0;
 }
+.btn-ea-page{
+    padding: 1rem 2rem;
+    font-family: var(--font);
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0);
+    color: var(--light-color);
+    border-radius: 4px;
+}
+.btn-ea-page:hover a{
+    transform: 1,25;
+}
+
 .banner-ea-play-top{
     background: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-second) 200%);
     width: 100%;
     height: 250px;
-    color: var(--second-color);
+    color: var(--light-color);
     padding: 5rem;
+    display: flex;
+    flex-direction: row;
 }
 .banner-ea-play-top h6{
     margin: 0;
