@@ -1,14 +1,26 @@
 :root{
-    --main-color: #ffffff;
+    --main-color: #161616;
+    --second-color: #ffffff;
+    --light-color: #f3f3f3;
+    --electronic-tag: #ff4747;
     --gradient-main: #0D1042;
     --gradient-second: #FE4647;
-    font-family: "Electronic Arts Text";
+    --font: "Electronic Arts Text";
+    font-family: var(--font);
 }
 body{
     margin: 0;
 }
 .banner-ea-play-top{
-    background: linear-gradient(45deg, var(--gradient-main), var(--gradient-second) 135%);
+    background: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-second) 200%);
     width: 100%;
     height: 250px;
+    color: var(--second-color);
+    padding: 5rem;
+}
+.banner-ea-play-top h6{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--font);
 }
