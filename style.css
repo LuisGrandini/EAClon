@@ -32,11 +32,12 @@ body{
 
 .act_button_sec{
     padding: 0 60px;
+    padding-left: 220px;
 }
 
 .act_botones{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     padding-right: 120px;
 }
 
@@ -50,8 +51,8 @@ a{
 }
 
 a:nth-child(2n){
-    border-left: 1px solid;
-    border-right: 1px solid;
+    border-left: 1px solid rgb(215, 214, 214);
+    border-right: 1px solid rgb(215, 214, 214);
 }
 
 
