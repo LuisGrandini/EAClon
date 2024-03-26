@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+.act_top_container{
+    width: auto;
+    padding: 0 7.4218vw;
+}
+
+.act_top{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 96px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.act_button_container{
+    margin: 0 20px;
+}
+
+.act_button_sec{
+    padding: 0 60px;
+}
+
+.act_botones{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 120px;
+}
+
+a{
+    display: flex;
+    padding: 0 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: rgba(22, 22, 22, 0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:nth-child(2n){
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+
+
+hr{
+    border-color: rgba(0, 0, 0, 0.08);
+}
