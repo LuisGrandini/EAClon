@@ -1,0 +1,79 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Electronic Arts Text";
+}
+
+.black-header-section {
+  background-color: #161616;
+  height: 40px;
+}
+
+header {
+  /* margin: 0 10px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: #fff;
+}
+
+.menu-container {
+  margin: 0 1rem;
+}
+
+.hero-section {
+  padding: 0;
+  margin: 0;
+  height: 540px;
+  background-image: url("/assets/bf-2042-s7-free-access-no-logo-hero-med-xl.jpg.adapt.crop5x2.1455w.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.hero-section .hero-content {
+  margin: 0 3rem;
+  width: 42%;
+}
+
+.battlefield-hero-img {
+  width: 100%;
+}
+
+.hero-text {
+  color: #f3f3f3;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-hero-container a {
+  padding: 12px 24px;
+}
+
+.btn-1 {
+  display: flex;
+  color: #161616;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 1px;
+}
