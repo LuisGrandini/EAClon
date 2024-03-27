@@ -4,7 +4,10 @@
     --light-color: #f3f3f3;
     --electronic-tag: #ff4747;
     --gradient-main: #0D1042;
+    --gradient-main-transparency: #0d1042aa;
     --gradient-second: #FE4647;
+    --gradient-second-transparency: #fe46469f;
+    --parental-color: #6FB0D6;
     --font: "Electronic Arts Text";
     font-family: var(--font);
 }
@@ -23,17 +26,24 @@ body{
     border-radius: 4px;
     text-decoration: none;
     border: 2px solid var(--light-color);
-    transition: all ease-in-out 0.3s;
+    transition: 0.3s;
+}
+.dark-btn{
+    color: var(--main-color);
+    border-color: var(--main-color);
 }
 .btn-ea-play:hover{
-    transition: all ease-in-out 0.3s;
-    padding: 16px 28px;
+    transform: scale(1.15);
 }
 
 .banner-ea-play-top{
-    background-image: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-main) 50%, var(--gradient-second) 80%),
-    url(https://media.contentapi.ea.com/content/dam/eacom/images/2023/09/ea-play-grid-evergreen-hero-md-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
+    background-image: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-main-transparency) 50%,
+    var(--gradient-second-transparency) 90%, var(--gradient-second) 100%),
+    url(https://media.contentapi.ea.com/content/dam/eacom/images/2023/09/ea-play-grid-evergreen-hero-md-7x2-xl.jpg.adapt.crop7x2.1445w.jpg);
+    background-position: center;
+    background-repeat: round;
     max-width: 100%;
+    max-height: 25rem;
     display: flex;
     flex-direction: row;
     }
@@ -46,38 +56,75 @@ body{
 }
 .slider-cards-container{
     width: 100%;
-    margin: 0 2rem 0 0;
+    margin: 2rem 2rem 2rem 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-.slider-ea-play-card{
-    max-width: 250px;
-    max-height: fit-content;
-    margin-bottom: 2rem;
-    padding: 0;
-    border: 0px solid var(--main-color);
-    background: var(--main-color);
-}
-.slider-img{
-    max-width: inherit;
-    max-height: inherit;
-    padding: 0;
+    justify-content: start;
+    gap: 2rem;
+    overflow: hidden;
+
 }
 .slider-card-text{
-    padding: 1rem;
-    text-align: justify;
-    justify-self: start;
-    font-size: 14px;
-    margin: 0;
-    color: var(--light-color);
+    display: none;
 }
-
+.slider-ea-play-card{
+    box-sizing: border-box;
+    background-image: url(./assets/images/ea-play-ex.jpg);
+    background-position: center;
+    background-size: 350px;
+    width: 350px;
+    height: 200px;
+    margin-bottom: 2rem;
+    padding: 0;
+    border: 5px solid var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-link-ea-play:hover{
+    .slider-card-text{
+        display: flex;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        justify-self: start;
+        font-size: 14px;
+        margin: 0;
+        color: var(--light-color);
+    }
+    .info-tag{
+        color:var(--light-color);
+        border: 2px solid var(--light-color);
+        padding: 1px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    .slider-ea-play-card{
+        background-image: linear-gradient(45deg, var(--gradient-second) 0%, var(--gradient-main-transparency) 50%,
+         var(--gradient-main) 100%), url(./assets/images/ea-play-ex.jpg);
+    }
+    text-decoration: none;
+}
+.banner-ea-play-bottom{
+    background-color: var(--parental-color);
+    padding: 1rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20rem;
+    align-items: center;
+}
+.parental-banner-text{
+    font-size: 26px;
+    width: 600px;
+}
 
 
 .text-banner-ea-play{
     color: var(--light-color);
-    padding: 5rem 4rem 5rem 8rem;
+    padding: 3rem 4rem 3rem 8rem;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -86,8 +133,11 @@ body{
 }
 .title-style-ea{
     color: var(--light-color);
-    font-size: 24px;
+    border: 3px solid var(--light-color);
+    border-radius: 6px;
+    font-size: 36px;
     margin: 1rem 0;
+    padding: 12px 24px;
 }
 .text-style-banner{
     margin: 0;
