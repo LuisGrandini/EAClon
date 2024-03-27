@@ -12,6 +12,10 @@ body{
     margin: 0;
 }
 
+.actualizacion{
+    background-color: #F1F1F1;
+}
+
 .act_top_container{
     width: auto;
     padding: 0 7.4218vw;
