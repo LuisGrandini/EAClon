@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text" rel="stylesheet"> 
+    <!--GlideJS-->
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">    
+    
     <title>EA Clon</title>
 </head>
 <body>
@@ -19,10 +23,9 @@
                     <a href="https://www.ea.com/es-es/ea-play" class="btn-ea-play">Únete ya</a>
                 </div>
             </div>
-            <div class="slider-banner-ea-play"> 
-                <h3 class="title-style-ea">¿Qué es EA Play?</h3>
+            <div class="slider-banner-ea-play">
                 <div class="slider-cards-container">
-                    <a href="#" class="card-link-ea-play first-link">
+                    <!--<a href="#" class="card-link-ea-play first-link">
                         <div class="slider-ea-play-card first-card">
                             <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
                                 de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
@@ -31,12 +34,108 @@
                             <h4 class="slider-card-text info-tag">Más Info.</h4>
                         </div>
                     </a>
-                    <div class="slider-ea-play-card second-card">
-                        <h6 class="slider-card-text">Puedes probar determinados juegos nuevos hasta
-                            un máximo de 10 horas sin compromiso. Si decides comprarlo tu progreso se 
-                            transferirá al juego final.
-                        </h6>
+                        <a href="#" class="card-link-ea-play second-link">
+                            <div class="slider-ea-play-card second-card">
+                                <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
+                                    de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
+                                    en cualquier momento.
+                                </h6>
+                                <h4 class="slider-card-text info-tag">Más Info.</h4>
+                            </div>
+                            </a>-->
+
+
+
+                    <!--Intentando hacer el glide, de momento no funciona-->
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <a href="#" class="card-link-ea-play first-link">
+                                    <div class="slider-ea-play-card first-card">
+                                        <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
+                                            de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
+                                            en cualquier momento.
+                                        </h6>
+                                        <h4 class="slider-card-text info-tag">Más Info</h4>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="#" class="card-link-ea-play second-link">
+                                    <div class="slider-ea-play-card second-card">
+                                        <h6 class="slider-card-text">Puedes probar determinados juegos
+                                            nuevos durante un máximo de 10 horas, tu progreso se trasnferirá al
+                                            juego completo si lo compras.
+                                        </h6>
+                                        <h4 class="slider-card-text info-tag">Descubre las pruebas de juego</h4>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="#" class="card-link-ea-play third-link">
+                                    <div class="slider-ea-play-card third-card">
+                                        <h6 class="slider-card-text">Como miembro, puedes desbloquear
+                                            recompensas y desafíos en el juego que te permitirán mejorar
+                                            la experiencia y destacar entre la multitud.
+                                        </h6>
+                                        <h4 class="slider-card-text info-tag">Explorar recompensas</h4>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="#" class="card-link-ea-play fourth-link">
+                                    <div class="slider-ea-play-card fourth-card">
+                                        <h6 class="slider-card-text">Accede a The Play List, donde siempre
+                                            tendrás algo a lo que jugar con acceso ilimitado a una colección de
+                                            las series y títulos mas famosos entre nuestros fans.
+                                        </h6>
+                                        <h4 class="slider-card-text info-tag">The Play List</h4>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="#" class="card-link-ea-play fifth-link">
+                                    <div class="slider-ea-play-card fifth-card">
+                                        <h6 class="slider-card-text">Consigue un 10% de descuento en tus 
+                                            compras de contenido digital de Electronic Arts, incluidas descargas
+                                            de juegos, pases de temporada, paquetes de puntos y DLC.
+                                        </h6>
+                                        <h4 class="slider-card-text info-tag">Detalles</h4>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span><</span></button>
+                            <!--<div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                            </div>-->
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span>></span></button>
+                        </div>
                     </div>
+                    <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+                    <script>
+                        const glide = new Glide('.glide', {
+                            type: 'slider',
+                            startAt: 0,
+                            focusAt: 'center',
+                            autoplay: 5000,
+                            hoverpause: true,
+                            perView: 1,
+                            breakpoints: {
+                                450: {perView: 1}
+                            }
+                        })
+                        glide.mount()
+                    </script>
+
+
+                
                 </div>
             </div>
         </div>
