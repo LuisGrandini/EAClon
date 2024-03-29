@@ -17,8 +17,37 @@
     <section class="ea-play-menu">
         <div class="ea-play-menu-background"></div>
         <aside class="sidebar-ea-play-menu">
-            <img class="ea-play-logo" src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
-            <h3>esto es un ejemplo a ver si funciona</h3>
+            <div class="data-sidebar-ea-play-menu">
+                <img class="ea-play-logo" src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
+                <h3>No te limites a jugar. Saca más partido a tus juegos.</h3>
+                <h6>Desbloquea recompensas exclusivas, contenido solo para miembros y una biblioteca
+                de los mejores títulos a partir de 3,99€ al mes.</h6>
+                <div class="ea-play-menu-bar"></div>
+                <h5>Paso 1</h5>
+                <div class="btns-ea-play-menu">
+                    <a class="ea-play-menu-card ea-app-card">
+                        <img class="small-logo-ea-menu" src="./assets/images/ea-small-logo.svg">
+                        <h3>EA App</h3>
+                        <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                    </a>
+                    <a class="ea-play-menu-card steam-card" href="https://smarturl.it/ea-play-steam">
+                        <img class="small-logo-ea-menu" src="./assets/images/ea-small-logo.svg">
+                        <h3>Steam</h3>
+                        <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                    </a>
+                    <a class="ea-play-menu-card playstation-card" href="https://smarturl.it/ea-play-playstation">
+                        <img class="small-logo-ea-menu" src="./assets/images/ea-small-logo.svg">
+                        <h3>Playstation</h3>
+                        <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                    </a>
+                    <a class="ea-play-menu-card xbox-card" href="https://smarturl.it/ea-play-xbox">
+                        <img class="small-logo-ea-menu" src="./assets/images/ea-small-logo.svg">
+                        <h3>Xbox</h3>
+                        <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                    </a>
+                </div>
+            </div>
+
         </aside>
     </section>
     <section class="banner-ea-play-container">
@@ -124,27 +153,27 @@
                     </script>
                 </div>
             </div>
-            <!--Funcionalidad del sidebar-->
-            <script>
-                const sidebarEaPlay = document.querySelector(".ea-play-menu");
-                const sidebarButton = document.querySelector(".btn-ea-play");
-                const sidebarBackground = document.querySelector(".ea-play-menu-background");
-
-                function openSidebar() {
-                 sidebarEaPlay.style.display = "flex";
-                }
-                function closeSidebar(){
-                    sidebarEaPlay.style.display = "none";
-                }
-
-                sidebarButton.addEventListener("click", openSidebar);
-                sidebarBackground.addEventListener("click", closeSidebar);
-            </script>
         </div>
         <div class="banner-ea-play-bottom">
             <h2 class="parental-banner-text">Herramientas parentales y de juego: el control en tus manos</h2>
             <a href="#" class="btn-ea-play dark-btn">Más Información</a>
         </div>
     </section>
+     <!--Funcionalidad del sidebar-->
+     <script>
+        const sidebarEaPlay = document.querySelector(".ea-play-menu");
+        const sidebarButton = document.querySelector(".btn-ea-play");
+        const sidebarBackground = document.querySelector(".ea-play-menu-background");
+
+        function openSidebar() {
+         sidebarEaPlay.style.display = "flex";
+        }
+        function closeSidebar(){
+            sidebarEaPlay.style.display = "none";
+        }
+
+        sidebarButton.addEventListener("click", openSidebar);
+        sidebarBackground.addEventListener("click", closeSidebar);
+    </script>
 </body>
 </html>

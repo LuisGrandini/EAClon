@@ -37,7 +37,7 @@ body{
 .btn-ea-play:hover{
     transform: scale(1.15);
 }
-/*Esto es el estilo del aside menu de eaPlay*/
+/*Esto es el estilo del sidebar menu de eaPlay*/
 .ea-play-menu{
     display: none;
     position: absolute;
@@ -54,19 +54,77 @@ body{
     z-index: 8;
 }
 .sidebar-ea-play-menu{
+    box-sizing: border-box;
     background-color: var(--gradient-main);
-    width: 500px;
+    width: 575px;
     height: 100%;
     z-index: 9;
     overflow: scroll;
     scrollbar-color: rgba(255, 255, 255, 0);
     font-family: var(--font);
     color: var(--light-color);
-    display: flex;
-
 }
-.ea-play-logo{
-    width: 115px;
+.data-sidebar-ea-play-menu{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    pointer-events: all;
+
+    .ea-play-logo{
+        width: 115px;
+    }
+}
+.data-sidebar-ea-play-menu h3{
+    margin: 0;
+    padding-top: 10px;
+}
+.data-sidebar-ea-play-menu h5{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.data-sidebar-ea-play-menu h6{
+    margin: 0;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--light-color);
+    filter: opacity(.5);
+}
+.ea-play-menu-bar{
+    border: 1px solid var(--light-color);
+    filter: opacity(.5);
+    margin-top: 20px;
+}
+.btns-ea-play-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    
+    .ea-play-menu-card{
+        border: 1px solid var(--light-color);
+        background-color: opacity(.5), var(--light-color);
+        display: flex;
+        flex-direction: row;
+        padding: 12px 24px; 
+        align-items: center;
+        gap: 1rem;
+        h3{
+            text-decoration: none;
+            padding: 0;
+        }
+        .small-logo-ea-menu{
+            width: 35px;
+        }
+        .logo-card-right-ea-play{
+            width: 70px;
+            padding-top: 10px;
+            padding-left: 100px;
+        }
+    }
 }
  /* Estilo del banner principal de la sección EA-PLAY*/
 .banner-ea-play-top{
