@@ -37,7 +37,38 @@ body{
 .btn-ea-play:hover{
     transform: scale(1.15);
 }
+/*Esto es el estilo del aside menu de eaPlay*/
+.ea-play-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.ea-play-menu-background{
+    background-color: var(--main-color);
+    filter: opacity(0.5);
+    width: inherit;
+    height: inherit;
+    z-index: 8;
+}
+.sidebar-ea-play-menu{
+    background-color: var(--gradient-main);
+    width: 500px;
+    height: 100%;
+    z-index: 9;
+    overflow: scroll;
+    scrollbar-color: rgba(255, 255, 255, 0);
+    font-family: var(--font);
+    color: var(--light-color);
+    display: flex;
 
+}
+.ea-play-logo{
+    width: 115px;
+}
+ /* Estilo del banner principal de la sección EA-PLAY*/
 .banner-ea-play-top{
     background-image: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-main-transparency) 50%,
     var(--gradient-second-transparency) 90%, var(--gradient-second) 100%),

@@ -12,6 +12,15 @@
     <title>EA Clon</title>
 </head>
 <body>
+
+    <!--Esto es la sidebar de EAPLAY, lo mejor seria tenerlo cerca del banner-->
+    <section class="ea-play-menu">
+        <div class="ea-play-menu-background"></div>
+        <aside class="sidebar-ea-play-menu">
+            <img class="ea-play-logo" src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
+            <h3>esto es un ejemplo a ver si funciona</h3>
+        </aside>
+    </section>
     <section class="banner-ea-play-container">
         <div class="banner-ea-play-top">
             <div class="text-banner-ea-play">
@@ -20,33 +29,13 @@
                     Desbloquea recompensas exclusivas,
                     contenido para los miembros y una biblioteca de los mejores títulos.</h6>
                 <div class="btn-container">
-                    <a href="https://www.ea.com/es-es/ea-play" class="btn-ea-play">Únete ya</a>
+                    <button class="btn-ea-play">Únete ya</button>
                 </div>
             </div>
             <div class="slider-banner-ea-play">
                 <div class="slider-cards-container">
-                    <!--<a href="#" class="card-link-ea-play first-link">
-                        <div class="slider-ea-play-card first-card">
-                            <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
-                                de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
-                                en cualquier momento.
-                            </h6>
-                            <h4 class="slider-card-text info-tag">Más Info.</h4>
-                        </div>
-                    </a>
-                        <a href="#" class="card-link-ea-play second-link">
-                            <div class="slider-ea-play-card second-card">
-                                <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
-                                    de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
-                                    en cualquier momento.
-                                </h6>
-                                <h4 class="slider-card-text info-tag">Más Info.</h4>
-                            </div>
-                            </a>-->
-
-
-
-                    <!--Intentando hacer el glide, de momento no funciona-->
+                    
+                    <!--Glide Operativo, en principio se va a quedar asi y en todo caso se cambiará visualmente, no a nivel funcional-->
                     <div class="glide">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
@@ -133,11 +122,24 @@
                         })
                         glide.mount()
                     </script>
-
-
-                
                 </div>
             </div>
+            <!--Funcionalidad del sidebar-->
+            <script>
+                const sidebarEaPlay = document.querySelector(".ea-play-menu");
+                const sidebarButton = document.querySelector(".btn-ea-play");
+                const sidebarBackground = document.querySelector(".ea-play-menu-background");
+
+                function openSidebar() {
+                 sidebarEaPlay.style.display = "flex";
+                }
+                function closeSidebar(){
+                    sidebarEaPlay.style.display = "none";
+                }
+
+                sidebarButton.addEventListener("click", openSidebar);
+                sidebarBackground.addEventListener("click", closeSidebar);
+            </script>
         </div>
         <div class="banner-ea-play-bottom">
             <h2 class="parental-banner-text">Herramientas parentales y de juego: el control en tus manos</h2>
