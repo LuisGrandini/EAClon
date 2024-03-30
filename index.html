@@ -65,10 +65,45 @@
                         Tu selección de miembro solo se aplica a 1 plataforma.
                     </span>
                 </div>
-                    <div class="ea-play-menu-bar ea-play-second-bar"></div>
-                    <h3 class="ea-play-menu-select-info">Haz una selección para continuar</h3>
+                <div class="ea-play-menu-bar ea-play-second-bar"></div>
+                <h3 class="ea-play-menu-select-info">Haz una selección para continuar</h3>
+                <div class="ea-play-menu-hidden-info">
+                    <div class="hidden-menu-container">
+                        <h5>Paso 2</h5>
+                        <h3>Selecciona una suscripción</h3>
+                        <div class="price-cards-ea-play-container">
+                            <div class="ea-play-menu-card first-price-card">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="img-prices-ea-play-card">
+                                        <img class="logo-ea-play-price" src="./assets/images/logo-ea-play-med.svg">
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>3,99€/mes</h5>
+                                        <h5>24,99€/año</h5>
+                                    </div>
+                                </div>
+                                <h5 class="price-ea-play-card-info-text">Los miembros obtienen mas recompensas, más contenido exclusivo
+                                    y acceso ilimitado a los mejores títulos.
+                                </h5>
+                            </div>
+                            <div class="ea-play-menu-card second-price-card">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="img-prices-ea-play-card">
+                                        <img class="logo-ea-play-price" src="./assets/images/logo-ea-play-med.svg">
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>14,99€/mes</h5>
+                                        <h5>99,99€/año</h5>
+                                    </div>
+                                </div>
+                                <h5 class="price-ea-play-card-info-text">Los miembros obtienen mas recompensas, más contenido exclusivo
+                                    y acceso ilimitado a los mejores títulos.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </aside>
     </section>
     <section class="banner-ea-play-container">
@@ -185,15 +220,24 @@
         const sidebarEaPlay = document.querySelector(".ea-play-menu");
         const sidebarButton = document.querySelector(".btn-ea-play");
         const sidebarBackground = document.querySelector(".ea-play-menu-background");
+        const sidebarHiddenButton = document.querySelector(".ea-app-card");
+        const sidebarHiddenEaPlay = document.querySelector(".ea-play-menu-hidden-info");
+        const sidebarSelectInfo = document.querySelector(".ea-play-menu-select-info");
 
         function openSidebar() {
          sidebarEaPlay.style.display = "flex";
+        }
+        function openHiddenSidebar(){
+            sidebarHiddenEaPlay.style.display = "inherit";
+            sidebarHiddenButton.style.border = "3px solid var(--electronic-tag)";
+            sidebarSelectInfo.style.display = "none";
         }
         function closeSidebar(){
             sidebarEaPlay.style.display = "none";
         }
 
         sidebarButton.addEventListener("click", openSidebar);
+        sidebarHiddenButton.addEventListener("click", openHiddenSidebar);
         sidebarBackground.addEventListener("click", closeSidebar);
     </script>
 </body>

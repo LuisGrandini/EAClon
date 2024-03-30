@@ -103,50 +103,95 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
+}
+.ea-play-menu-small-info{
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--light-color);
+    filter: opacity(.5);
+}
+.ea-play-menu-card:hover{
+    border: 2px solid var(--electronic-tag);
+}
+.ea-play-menu-card{
+    text-decoration: none;
+    border: 2px solid var(--light-color);
+    background-color: var(--light-color-transparency);
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px; 
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font);
+    font-size: 16px;
+    gap: 1rem;
+    transition: all ease-in-out .1s;
     
-    .ea-play-menu-card{
-        border: 2px solid var(--light-color);
-        background-color: var(--light-color-transparency);
+    .ea-play-menu-card-left{
         display: flex;
         flex-direction: row;
-        padding: 10px 20px; 
         align-items: center;
-        justify-content: space-between;
-        font-family: var(--font);
-        font-size: 18px;
         gap: 1rem;
-        transition: all ease-in-out .1s;
+    }
+    h3{
+        text-decoration-style: none !important;
+        color: var(--light-color);
+        padding: 0;
+    }
+    .small-logo-ea-menu{
+        width: 25px;
+    }
+    .logo-card-right-ea-play{
+        width: 50px;
+        padding-top: 13px;
+        right: 0;
         
-        .ea-play-menu-card-left{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 1rem;
-        }
-        h3{
-            text-decoration-style: none !important;
-            color: var(--light-color);
+    }
+}
+.hidden-menu-container{
+    display: flex;
+    flex-direction: column;
+}
+.ea-play-menu-hidden-info{
+    display: none;
+}
+.ea-play-menu-hidden-info h3{
+    padding-bottom: 20px;
+}
+.ea-play-menu-hidden-info h5{
+    padding-bottom: 0;
+}
+
+.price-cards-ea-play-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.first-price-card{
+    flex-direction: column;
+}
+.second-price-card{
+    flex-direction: column;
+}
+.price-ea-play-card-info-text{
+    padding-bottom: 10px !important;
+}
+.ea-play-price-card-logo-and-prices{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+
+    .prices-ea-play-price-card{
+        padding-top: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+        h5{
             padding: 0;
         }
-        .small-logo-ea-menu{
-            width: 25px;
-        }
-        .logo-card-right-ea-play{
-            width: 50px;
-            padding-top: 13px;
-            right: 0;
-            
-        }
-    }
-    .ea-play-menu-small-info{
-        font-size: 14px;
-        font-weight: lighter;
-        color: var(--light-color);
-        filter: opacity(.5);
-    }
-    .ea-play-menu-card:hover{
-        border: 2px solid var(--electronic-tag);
     }
 }
 .ea-play-menu-select-info{
@@ -156,10 +201,13 @@ body{
     padding-top: 30px !important;
 }
 .ea-play-second-bar{
-    margin-top: 36px !important;
+    margin-top: 40px !important;
     opacity: .25;
 }
-
+.logo-ea-play-price{
+    width: 75px;
+    padding-top: 8px;
+}
  /* Estilo del banner principal de la sección EA-PLAY*/
 .banner-ea-play-top{
     background-image: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-main-transparency) 50%,
