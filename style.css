@@ -2,6 +2,7 @@
     --main-color: #161616;
     --second-color: #ffffff;
     --light-color: #f3f3f3;
+    --light-color-transparency: #f3f3f338;
     --electronic-tag: #ff4747;
     --gradient-main: #0D1042;
     --gradient-main-transparency: #0d1042aa;
@@ -60,12 +61,12 @@ body{
     height: 100%;
     z-index: 9;
     overflow: scroll;
-    scrollbar-color: rgba(255, 255, 255, 0);
+    scrollbar-width: none;
     font-family: var(--font);
     color: var(--light-color);
 }
 .data-sidebar-ea-play-menu{
-    padding: 3rem 2rem;
+    padding: 48px 48px 48px 32px;
     display: flex;
     flex-direction: column;
     pointer-events: all;
@@ -105,27 +106,60 @@ body{
 
     
     .ea-play-menu-card{
-        border: 1px solid var(--light-color);
-        background-color: opacity(.5), var(--light-color);
+        border: 2px solid var(--light-color);
+        background-color: var(--light-color-transparency);
         display: flex;
         flex-direction: row;
-        padding: 12px 24px; 
+        padding: 10px 20px; 
         align-items: center;
+        justify-content: space-between;
+        font-family: var(--font);
+        font-size: 18px;
         gap: 1rem;
+        transition: all ease-in-out .1s;
+        
+        .ea-play-menu-card-left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
         h3{
-            text-decoration: none;
+            text-decoration-style: none !important;
+            color: var(--light-color);
             padding: 0;
         }
         .small-logo-ea-menu{
-            width: 35px;
+            width: 25px;
         }
         .logo-card-right-ea-play{
-            width: 70px;
-            padding-top: 10px;
-            padding-left: 100px;
+            width: 50px;
+            padding-top: 13px;
+            right: 0;
+            
         }
     }
+    .ea-play-menu-small-info{
+        font-size: 14px;
+        font-weight: lighter;
+        color: var(--light-color);
+        filter: opacity(.5);
+    }
+    .ea-play-menu-card:hover{
+        border: 2px solid var(--electronic-tag);
+    }
 }
+.ea-play-menu-select-info{
+    position: relative;
+    align-self: center;
+    font-size: 16px;
+    padding-top: 30px !important;
+}
+.ea-play-second-bar{
+    margin-top: 36px !important;
+    opacity: .25;
+}
+
  /* Estilo del banner principal de la sección EA-PLAY*/
 .banner-ea-play-top{
     background-image: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-main-transparency) 50%,
@@ -189,9 +223,8 @@ body{
     background-position: center;
     background-size: 450px;
     width: 450px;
-    height: 255px;
+    height: 245px;
     padding: 0;
-    border: 5px solid var(--main-color);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -227,6 +260,8 @@ body{
         font-size: 18px;
     }
     .slider-ea-play-card{
+        border: 3px solid var(--main-color);
+        border-radius: 5px;
         background-image: linear-gradient(45deg, var(--gradient-second) 0%, var(--gradient-main-transparency) 50%,
          var(--gradient-main) 100%), url(./assets/images/ea-play-ex.jpg);
     }
