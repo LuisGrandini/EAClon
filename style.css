@@ -2,7 +2,8 @@
     --main-color: #161616;
     --second-color: #ffffff;
     --light-color: #f3f3f3;
-    --light-color-transparency: #f3f3f338;
+    --light-color-smooth-transparency: #f3f3f371;
+    --light-color-transparency: #f3f3f324;
     --electronic-tag: #ff4747;
     --gradient-main: #0D1042;
     --gradient-main-transparency: #0d1042aa;
@@ -52,14 +53,14 @@ body{
     filter: opacity(0.5);
     width: inherit;
     height: inherit;
-    z-index: 8;
+    z-index: 98;
 }
 .sidebar-ea-play-menu{
     box-sizing: border-box;
     background-color: var(--gradient-main);
     width: 575px;
     height: 100%;
-    z-index: 9;
+    z-index: 99;
     overflow: scroll;
     scrollbar-width: none;
     font-family: var(--font);
@@ -115,11 +116,11 @@ body{
 }
 .ea-play-menu-card{
     text-decoration: none;
-    border: 2px solid var(--light-color);
+    border: 2px solid var(--light-color-smooth-transparency);
     background-color: var(--light-color-transparency);
     display: flex;
     flex-direction: row;
-    padding: 10px 20px; 
+    padding: 12px 24px; 
     align-items: center;
     justify-content: space-between;
     font-family: var(--font);
@@ -148,6 +149,7 @@ body{
         
     }
 }
+/*Estilos del segundo menú escondido*/
 .hidden-menu-container{
     display: flex;
     flex-direction: column;
@@ -169,9 +171,15 @@ body{
 }
 .first-price-card{
     flex-direction: column;
+    color: var(--light-color);
+    font-size: 16px;
+    text-align: left;
 }
 .second-price-card{
     flex-direction: column;
+    color: var(--light-color);
+    font-size: 16px;
+    text-align: left;
 }
 .price-ea-play-card-info-text{
     padding-bottom: 10px !important;
@@ -194,6 +202,27 @@ body{
         }
     }
 }
+.ea-play-prices-info-tag{
+    background-color: transparent;
+    color: var(--electronic-tag);
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    border: 0;
+    margin: 20px 0 10px 0;
+}
+.ea-play-prices-info-tag:hover{
+    text-decoration: 2px underline var(--electronic-tag);
+}
+.ea-play-prices-info-link{
+    text-decoration: none;
+    color: var(--electronic-tag);
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.ea-play-prices-info-link:hover{
+    text-decoration: 2px underline var(--electronic-tag);
+}
 .ea-play-menu-select-info{
     position: relative;
     align-self: center;
@@ -208,6 +237,9 @@ body{
     width: 75px;
     padding-top: 8px;
 }
+
+
+
  /* Estilo del banner principal de la sección EA-PLAY*/
 .banner-ea-play-top{
     background-image: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-main-transparency) 50%,
