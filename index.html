@@ -108,7 +108,78 @@
                         </a>
                         <div class="ea-play-menu-bar"></div>
                     </div>
+                    <h3 class="ea-play-menu-select-info second-select">Haz una selección para continuar</h3>
                 </div>
+                <div class="ea-play-menu-second-hidden-info">
+                    <div class="hidden-menu-container first-subhidden-menu">
+                        <h5>Paso 3</h5>
+                        <h3>Selecciona un plan de pago</h3>
+                        <div class="price-cards-ea-play-container ea-plans-container">
+                            <button class="ea-play-menu-card price-anual-card">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="text-prices-hidden-ea-play-card">
+                                        <h3>Anual</h3>
+                                        <h3 class="best-price-tag">Mejor Precio</h3>
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>24,99€/año</h5>
+                                    </div>
+                                </div>
+                                <h5 class="price-ea-play-card-info-text">Suscríbete un año y ahorra
+                                    un 44% en comparación con el precio mensual.
+                                </h5>
+                            </button>
+                            <button class="ea-play-menu-card price-monthly-card">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="img-prices-ea-play-card">
+                                        <h3>Mensual</h3>
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>3,99€/mes</h5>
+                                    </div>
+                                </div>
+                                <h5 class="price-ea-play-card-info-text">Paga mes a mes para
+                                    acceder a una colección dinámica de juegos.
+                                </h5>
+                            </button>
+                            <div class="ea-play-menu-bar"></div>
+                        </div>
+                    </div>
+                    <div class="hidden-menu-container second-subhidden-menu">
+                        <h5>Paso 3</h5>
+                        <h3>Selecciona un plan de pago</h3>
+                        <div class="price-cards-ea-play-container ea-plans-container">
+                            <button class="ea-play-menu-card price-anual-card">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="text-prices-hidden-ea-play-card">
+                                        <h3>Anual</h3>
+                                        <h3 class="best-price-tag">Mejor Precio</h3>
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>99,99€/año</h5>
+                                    </div>
+                                </div>
+                                <h5 class="price-ea-play-card-info-text">Suscríbete un año y ahorra
+                                    un 44% en comparación con el precio mensual.
+                                </h5>
+                            </button>
+                            <button class="ea-play-menu-card price-monthly-card">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="img-prices-ea-play-card">
+                                        <h3>Mensual</h3>
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>14,99€/mes</h5>
+                                    </div>
+                                </div>
+                                <h5 class="price-ea-play-card-info-text">Paga mes a mes para
+                                    acceder a una colección dinámica de juegos.
+                                </h5>
+                            </button>
+                            <div class="ea-play-menu-bar"></div>
+                        </div>
+                    </div>
+                </div>                        
             </div>
         </aside>
     </section>
@@ -229,14 +300,29 @@
         const sidebarHiddenButton = document.querySelector(".ea-app-card");
         const sidebarHiddenEaPlay = document.querySelector(".ea-play-menu-hidden-info");
         const sidebarSelectInfo = document.querySelector(".ea-play-menu-select-info");
-
+        const sidebarSecondSelectInfo = document.querySelector(".second-select");
+        const sidebarSecondHiddenButtonA = document.querySelector(".first-price-card");
+        const sidebarSecondHiddenButtonB = document.querySelector(".second-price-card");
+        const sidebarHiddenPriceMenuA = document.querySelector(".first-subhidden-menu");
+        const sidebarHiddenPriceMenuB = document.querySelector(".second-subhidden-menu");
+       
         function openSidebar() {
          sidebarEaPlay.style.display = "flex";
         }
         function openHiddenSidebar(){
             sidebarHiddenEaPlay.style.display = "inherit";
-            sidebarHiddenButton.style.border = "3px solid var(--electronic-tag)";
+            sidebarHiddenButton.style.border = "4px solid var(--electronic-tag)";
             sidebarSelectInfo.style.display = "none";
+        }
+        function openHiddenPriceA(){
+            sidebarHiddenPriceMenuA.style.display = "inherit";
+            sidebarSecondHiddenButtonA.style.border = "4px solid var(--electronic-tag)";
+            sidebarSecondSelectInfo.style.display = "none";
+        }
+        function openHiddenPriceB(){
+            sidebarHiddenPriceMenuB.style.display = "inherit";
+            sidebarSecondHiddenButtonB.style.border = "4px solid var(--electronic-tag)";
+            sidebarSecondSelectInfo.style.display = "none";
         }
         function closeSidebar(){
             sidebarEaPlay.style.display = "none";
@@ -244,6 +330,8 @@
 
         sidebarButton.addEventListener("click", openSidebar);
         sidebarHiddenButton.addEventListener("click", openHiddenSidebar);
+        sidebarSecondHiddenButtonA.addEventListener("click", openHiddenPriceA);
+        sidebarSecondHiddenButtonB.addEventListener("click", openHiddenPriceB);
         sidebarBackground.addEventListener("click", closeSidebar);
     </script>
 </body>
