@@ -17,7 +17,7 @@
     <section class="ea-play-menu">
         <div class="ea-play-menu-background"></div>
         <aside class="sidebar-ea-play-menu">
-            <div class="data-sidebar-ea-play-menu">
+            <div class="data-sidebar-ea-play-menu" id="data-sidebar-ea-play-menu">
                 <img class="ea-play-logo" src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
                 <h3>No te limites a jugar. Saca más partido a tus juegos.</h3>
                 <h6>Desbloquea recompensas exclusivas, contenido solo para miembros y una biblioteca
@@ -25,7 +25,7 @@
                 <div class="ea-play-menu-bar"></div>
                 <h5>Paso 1</h5>
                 <div class="btns-ea-play-menu">
-                    <button class="ea-play-menu-card ea-app-card">
+                    <a class="ea-play-menu-card ea-app-card" href="#hidden-menu-container">
                         <div class="ea-play-menu-card-left">
                             <img class="small-logo-ea-menu" src="./assets/images/ea-small-logo.svg">
                             <h3>EA App</h3>
@@ -33,7 +33,7 @@
                         <div class="ea-play-menu-card-right">
                             <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
                         </div>
-                    </button>
+                    </a>
                     <a class="ea-play-menu-card steam-card" href="https://smarturl.it/ea-play-steam">
                         <div class="ea-play-menu-card-left">
                             <img class="small-logo-ea-menu" src="./assets/images/ea-small-logo.svg">
@@ -68,11 +68,11 @@
                 <div class="ea-play-menu-bar ea-play-second-bar"></div>
                 <h3 class="ea-play-menu-select-info">Haz una selección para continuar</h3>
                 <div class="ea-play-menu-hidden-info">
-                    <div class="hidden-menu-container">
+                    <div id="hidden-menu-container">
                         <h5>Paso 2</h5>
                         <h3>Selecciona una suscripción</h3>
                         <div class="price-cards-ea-play-container">
-                            <button class="ea-play-menu-card first-price-card">
+                            <a class="ea-play-menu-card first-price-card" href="#first-subhidden-menu">
                                 <div class="ea-play-price-card-logo-and-prices">
                                     <div class="img-prices-ea-play-card">
                                         <img class="logo-ea-play-price" src="./assets/images/logo-ea-play-med.svg">
@@ -85,8 +85,8 @@
                                 <h5 class="price-ea-play-card-info-text">Los miembros obtienen mas recompensas, más contenido exclusivo
                                     y acceso ilimitado a los mejores títulos.
                                 </h5>
-                            </button>
-                            <button class="ea-play-menu-card second-price-card">
+                            </a>
+                            <a class="ea-play-menu-card second-price-card" href="#second-subhidden-menu">
                                 <div class="ea-play-price-card-logo-and-prices">
                                     <div class="img-prices-ea-play-card">
                                         <img class="logo-ea-play-price" src="./assets/images/logo-ea-play-med.svg">
@@ -100,7 +100,7 @@
                                     acceso ilimitado a nuestros últimos títulos en cuanto se lancen,
                                     además de recompensas y contenido solo para miembros.
                                 </h5>
-                            </button>
+                            </a>
                         </div>
                         <button class="ea-play-prices-info-tag" href="#">Comparar Membresías</button>
                         <a class="ea-play-prices-info-link" href="https://www.ea.com/es-es/ea-play/faq#ea-desktop-faq">
@@ -111,24 +111,24 @@
                     <h3 class="ea-play-menu-select-info second-select">Haz una selección para continuar</h3>
                 </div>
                 <div class="ea-play-menu-second-hidden-info">
-                    <div class="hidden-menu-container first-subhidden-menu">
+                    <div class="hidden-menu-container" id="first-subhidden-menu">
                         <h5>Paso 3</h5>
                         <h3>Selecciona un plan de pago</h3>
                         <div class="price-cards-ea-play-container ea-plans-container">
-                            <button class="ea-play-menu-card price-anual-card">
-                                <div class="ea-play-price-card-logo-and-prices">
-                                    <div class="text-prices-hidden-ea-play-card">
-                                        <h3>Anual</h3>
-                                        <h3 class="best-price-tag">Mejor Precio</h3>
+                            <a class="ea-play-menu-card price-anual-card" href="#ea-play-menu-last-hidden-info">
+                                    <div class="ea-play-price-card-logo-and-prices">
+                                        <div class="text-prices-hidden-ea-play-card">
+                                            <h3>Anual</h3>
+                                            <h3 class="best-price-tag">Mejor Precio</h3>
+                                        </div>
+                                        <div class="prices-ea-play-price-card">
+                                            <h5>24,99€/año</h5>
+                                        </div>
                                     </div>
-                                    <div class="prices-ea-play-price-card">
-                                        <h5>24,99€/año</h5>
-                                    </div>
-                                </div>
-                                <h5 class="price-ea-play-card-info-text">Suscríbete un año y ahorra
-                                    un 44% en comparación con el precio mensual.
-                                </h5>
-                            </button>
+                                    <h5 class="price-ea-play-card-info-text">Suscríbete un año y ahorra
+                                        un 44% en comparación con el precio mensual.
+                                    </h5>
+                            </a>
                             <button class="ea-play-menu-card price-monthly-card">
                                 <div class="ea-play-price-card-logo-and-prices">
                                     <div class="img-prices-ea-play-card">
@@ -145,7 +145,7 @@
                             <div class="ea-play-menu-bar"></div>
                         </div>
                     </div>
-                    <div class="hidden-menu-container second-subhidden-menu">
+                    <div class="hidden-menu-container" id="second-subhidden-menu">
                         <h5>Paso 3</h5>
                         <h3>Selecciona un plan de pago</h3>
                         <div class="price-cards-ea-play-container ea-plans-container">
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ea-play-menu-last-hidden-info">
+                <div class="ea-play-menu-last-hidden-info" id="ea-play-menu-last-hidden-info">
                     <h5>Tu selección</h5>
                     <h6>EA app para Windows</h6>
                     <h6 class="last-hidden-info-tag">Membresía anual</h6>
@@ -239,105 +239,107 @@
     </section>
     <section class="banner-ea-play-container">
         <div class="banner-ea-play-top">
-            <div class="text-banner-ea-play">
-                <img src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
-                <h6 class="text-style-banner">No te limites a jugar. Saca más partido a tus juegos.
-                    Desbloquea recompensas exclusivas,
-                    contenido para los miembros y una biblioteca de los mejores títulos.</h6>
-                <div class="btn-container">
-                    <button class="btn-ea-play">Únete ya</button>
-                </div>
-            </div>
-            <div class="slider-banner-ea-play">
-                <div class="slider-cards-container">
-                    
-                    <!--Glide Operativo, en principio se va a quedar asi y en todo caso se cambiará visualmente, no a nivel funcional-->
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <a href="#" class="card-link-ea-play first-link">
-                                    <div class="slider-ea-play-card first-card">
-                                        <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
-                                            de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
-                                            en cualquier momento.
-                                        </h6>
-                                        <h4 class="slider-card-text info-tag">Más Info</h4>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="glide__slide">
-                                    <a href="#" class="card-link-ea-play second-link">
-                                    <div class="slider-ea-play-card second-card">
-                                        <h6 class="slider-card-text">Puedes probar determinados juegos
-                                            nuevos durante un máximo de 10 horas, tu progreso se trasnferirá al
-                                            juego completo si lo compras.
-                                        </h6>
-                                        <h4 class="slider-card-text info-tag">Descubre las pruebas de juego</h4>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="glide__slide">
-                                    <a href="#" class="card-link-ea-play third-link">
-                                    <div class="slider-ea-play-card third-card">
-                                        <h6 class="slider-card-text">Como miembro, puedes desbloquear
-                                            recompensas y desafíos en el juego que te permitirán mejorar
-                                            la experiencia y destacar entre la multitud.
-                                        </h6>
-                                        <h4 class="slider-card-text info-tag">Explorar recompensas</h4>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="glide__slide">
-                                    <a href="#" class="card-link-ea-play fourth-link">
-                                    <div class="slider-ea-play-card fourth-card">
-                                        <h6 class="slider-card-text">Accede a The Play List, donde siempre
-                                            tendrás algo a lo que jugar con acceso ilimitado a una colección de
-                                            las series y títulos mas famosos entre nuestros fans.
-                                        </h6>
-                                        <h4 class="slider-card-text info-tag">The Play List</h4>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="glide__slide">
-                                    <a href="#" class="card-link-ea-play fifth-link">
-                                    <div class="slider-ea-play-card fifth-card">
-                                        <h6 class="slider-card-text">Consigue un 10% de descuento en tus 
-                                            compras de contenido digital de Electronic Arts, incluidas descargas
-                                            de juegos, pases de temporada, paquetes de puntos y DLC.
-                                        </h6>
-                                        <h4 class="slider-card-text info-tag">Detalles</h4>
-                                    </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span><</span></button>
-                            <!--<div class="glide__bullets" data-glide-el="controls[nav]">
-                                <button class="glide__bullet" data-glide-dir="=0"></button>
-                                <button class="glide__bullet" data-glide-dir="=1"></button>
-                                <button class="glide__bullet" data-glide-dir="=2"></button>
-                                <button class="glide__bullet" data-glide-dir="=3"></button>
-                            </div>-->
-                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span>></span></button>
-                        </div>
+            <div class="text-and-slider-container-ea-play">
+                <div class="text-banner-ea-play">
+                    <img src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
+                    <h6 class="text-style-banner">No te limites a jugar. Saca más partido a tus juegos.
+                        Desbloquea recompensas exclusivas,
+                        contenido para los miembros y una biblioteca de los mejores títulos.</h6>
+                    <div class="btn-container">
+                        <a class="btn-ea-play" href="#data-sidebar-ea-play-menu">Únete ya</a>
                     </div>
-                    <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
-                    <script>
-                        const glide = new Glide('.glide', {
-                            type: 'slider',
-                            startAt: 0,
-                            focusAt: 'center',
-                            autoplay: 5000,
-                            hoverpause: true,
-                            perView: 1,
-                            breakpoints: {
-                                450: {perView: 1}
-                            }
-                        })
-                        glide.mount()
-                    </script>
+                </div>
+                <div class="slider-banner-ea-play">
+                    <div class="slider-cards-container">
+            
+                        <!--Glide Operativo, en principio se va a quedar asi y en todo caso se cambiará visualmente, no a nivel funcional-->
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play first-link">
+                                        <div class="slider-ea-play-card first-card">
+                                            <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
+                                                de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
+                                                en cualquier momento.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Más Info</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play second-link">
+                                        <div class="slider-ea-play-card second-card">
+                                            <h6 class="slider-card-text">Puedes probar determinados juegos
+                                                nuevos durante un máximo de 10 horas, tu progreso se trasnferirá al
+                                                juego completo si lo compras.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Descubre las pruebas de juego</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play third-link">
+                                        <div class="slider-ea-play-card third-card">
+                                            <h6 class="slider-card-text">Como miembro, puedes desbloquear
+                                                recompensas y desafíos en el juego que te permitirán mejorar
+                                                la experiencia y destacar entre la multitud.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Explorar recompensas</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play fourth-link">
+                                        <div class="slider-ea-play-card fourth-card">
+                                            <h6 class="slider-card-text">Accede a The Play List, donde siempre
+                                                tendrás algo a lo que jugar con acceso ilimitado a una colección de
+                                                las series y títulos mas famosos entre nuestros fans.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">The Play List</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play fifth-link">
+                                        <div class="slider-ea-play-card fifth-card">
+                                            <h6 class="slider-card-text">Consigue un 10% de descuento en tus
+                                                compras de contenido digital de Electronic Arts, incluidas descargas
+                                                de juegos, pases de temporada, paquetes de puntos y DLC.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Detalles</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span><</span></button>
+                                <!--<div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                                </div>-->
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span>></span></button>
+                            </div>
+                        </div>
+                        <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+                        <script>
+                            const glide = new Glide('.glide', {
+                                type: 'slider',
+                                startAt: 0,
+                                focusAt: 'center',
+                                autoplay: 5000,
+                                hoverpause: true,
+                                perView: 1,
+                                breakpoints: {
+                                    450: {perView: 1}
+                                }
+                            })
+                            glide.mount()
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -357,8 +359,10 @@
         const sidebarSecondSelectInfo = document.querySelector(".second-select");
         const sidebarSecondHiddenButtonA = document.querySelector(".first-price-card");
         const sidebarSecondHiddenButtonB = document.querySelector(".second-price-card");
-        const sidebarHiddenPriceMenuA = document.querySelector(".first-subhidden-menu");
-        const sidebarHiddenPriceMenuB = document.querySelector(".second-subhidden-menu");
+        const sidebarHiddenPriceMenuA = document.querySelector("#first-subhidden-menu");
+        const sidebarHiddenPriceMenuB = document.querySelector("#second-subhidden-menu");
+        const sidebarLastHiddenButtonA = document.querySelector(".price-anual-card")
+        const sidebarLastHiddenInfoA = document.querySelector(".ea-play-menu-last-hidden-info");
        
         function openSidebar() {
          sidebarEaPlay.style.display = "flex";
@@ -369,17 +373,25 @@
             sidebarSelectInfo.style.display = "none";
         }
         function openHiddenPriceA(){
+            sidebarHiddenPriceMenuB.style.display = "none";
             sidebarHiddenPriceMenuA.style.display = "inherit";
             sidebarSecondHiddenButtonA.style.border = "4px solid var(--electronic-tag)";
+            sidebarSecondHiddenButtonB.style.border = "2px solid var(--light-color-smooth-transparency)"
             sidebarSecondSelectInfo.style.display = "none";
         }
         function openHiddenPriceB(){
+            sidebarHiddenPriceMenuA.style.display = "none";
             sidebarHiddenPriceMenuB.style.display = "inherit";
             sidebarSecondHiddenButtonB.style.border = "4px solid var(--electronic-tag)";
+            sidebarSecondHiddenButtonA.style.border = "2px solid var(--light-color-smooth-transparency)"
             sidebarSecondSelectInfo.style.display = "none";
         }
         function closeSidebar(){
             sidebarEaPlay.style.display = "none";
+            sidebarHiddenButton.style.border = "2px solid var(--light-color-smooth-transparency)"   
+            sidebarHiddenEaPlay.style.display = "none";
+            sidebarHiddenPriceMenuA.style.display = "none";
+            sidebarHiddenPriceMenuB.style.display = "none";
         }
 
         sidebarButton.addEventListener("click", openSidebar);
