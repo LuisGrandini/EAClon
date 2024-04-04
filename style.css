@@ -19,6 +19,7 @@ body{
 .act_top_container{
     width: auto;
     padding: 0 7.4218vw;
+    height: 8rem;
 }
 
 .act_top{
@@ -63,6 +64,7 @@ a:nth-child(2n){
 
 hr{
     border-color: rgba(0, 0, 0, 0.08);
+    margin-top: -10px;
 }
 
 .act_noticias_container{
@@ -76,30 +78,36 @@ hr{
 .act_card_container{
     display: flex;
     flex-wrap: wrap;
-    gap:2rem;
+    gap:1rem;
     justify-content: center;
     height: 50rem;
     width: 100%;
 }
 
-.act_card{
+.act_card,.act_card_1,.act_card_2,.act_card_3,.act_card_4,.act_card_5,.act_card_6{
     width: 26%;
     background-color: white;
     border: 1px solid rgb(165, 165, 165);
-    box-shadow: 10px 10px 19px -10px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.5);
     transition: ease-out 250ms;
+}
+
+.act_card_1,.act_card_2,.act_card_3,.act_card_4,.act_card_5,.act_card_6{
+    display: none;
 }
 
 .act_card:hover{
     transition: ease-in 250ms;
     transform: translateY(-0.5rem);
-    box-shadow: 10px 10px 35px -6px rgba(0,0,0,1);
+    box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
 .imagen-card{
     width: 100%;
     background-color: white;
-    height: 10rem;
+    height: 12rem;
+    object-fit: cover;
     margin-bottom: -5px;
 }
 
@@ -135,4 +143,19 @@ hr{
 .link{
     display: unset;
     padding: unset;
+}
+
+.act_link{
+    height: 60px;
+    align-items: center;
+}
+
+
+.act_link:focus{
+    background-color: #DEDEDE;
+    border-bottom: 2px solid #FF4747;
+}
+
+.act_link:hover{
+    background-color: #DEDEDE;
 }
