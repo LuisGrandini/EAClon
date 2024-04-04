@@ -1,4 +1,12 @@
 /* Footer */
+#click-event-footer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+
 body{
     margin: 0;
 }
@@ -84,6 +92,58 @@ body{
     background-color: #F3F3F3
 }
 
+#footer-region-language{
+    display: flex;
+    gap: 20px;
+}
+
+#special-div-regional, #special-div-language {
+    border: solid 1px #C2C2C2;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+#div-region, #div-language{
+    padding-right: 20px;
+    gap: 10px;
+    display: none;
+    position: relative;
+    bottom:230px;
+    right: 270%;
+    background-color: #F3F3F3;
+    border: #C2C2C2 2px solid;
+    box-shadow: 1px 7px 17px 3px #C2C2C2;
+    z-index: 1;
+}
+
+.region-and-language{
+    list-style: none;
+    border-bottom: #C2C2C2 1px solid;
+    padding: 10px 0;
+    max-width: 120px;
+    text-wrap: nowrap;
+}
+
+.region-and-language a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    margin-right: 70px;
+    transition: 0.1s ease-in-out;
+}
+
+.region-and-language img{
+    padding-right: 10px;
+}
+
+.region-and-language a:hover{
+    padding-left: 15px;  
+}
+
 #footer-logo-links{
     display: flex;
     gap: 20px;
@@ -92,8 +152,12 @@ body{
 .footer-network{
     list-style: none;
     display: flex;
-    gap: 50px;
+    justify-content: space-around;
     padding: 0;
+}
+
+.footer-network li{
+    padding: 0 20px;
 }
 
 .links-network{
@@ -123,4 +187,40 @@ body{
 
 #copyright{
    margin-left: 40px;
+}
+
+@media(max-width: 1456px){
+    .footer-network{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 1024px){
+    #footer-bottom{
+        flex-wrap: wrap;
+    }
+    #footer-region-language{
+        margin-left: 12%;
+    }
+    #div-region, #div-language{
+        flex-direction: column;
+        overflow: scroll;
+        width: 900px;
+        height: 400px;
+        right: 20%;
+    }
+
+    #div-region ul, #div-language ul{
+        margin: 0;
+    }
+}
+
+@media(max-width: 768px){
+    #footer-region-language{
+        flex-wrap: wrap;
+    }
+
+    #special-div-regional, #special-div-language{
+        width: 400px;
+    }
 }
