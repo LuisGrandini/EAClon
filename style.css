@@ -60,6 +60,23 @@ a:nth-child(2n){
     border-right: 1px solid rgb(215, 214, 214);
 }
 
+.act_link{
+    height: 60px;
+    align-items: center;
+}
+
+
+
+
+.act_link:hover{
+    background-color: #DEDEDE;
+}
+
+#act_link_news{
+    background-color: #DEDEDE;
+    border-bottom: 2px solid #FF4747;
+}
+
 
 
 hr{
@@ -145,17 +162,3 @@ hr{
     padding: unset;
 }
 
-.act_link{
-    height: 60px;
-    align-items: center;
-}
-
-
-.act_link:focus{
-    background-color: #DEDEDE;
-    border-bottom: 2px solid #FF4747;
-}
-
-.act_link:hover{
-    background-color: #DEDEDE;
-}
