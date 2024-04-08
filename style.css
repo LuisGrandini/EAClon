@@ -52,7 +52,7 @@ a{
     margin: 10px 0;
     text-decoration: none;
     color: rgba(22, 22, 22, 0.8);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font);
 }
 
 a:nth-child(2n){
