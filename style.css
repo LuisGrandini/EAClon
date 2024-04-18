@@ -47,7 +47,7 @@ body{
     padding-right: 120px;
 }
 
-a{
+.link{
     display: flex;
     padding: 0 15px;
     margin: 10px 0;
@@ -56,17 +56,23 @@ a{
     font-family: var(--font);
 }
 
-a:nth-child(2n){
-    border-left: 1px solid rgb(215, 214, 214);
-    border-right: 1px solid rgb(215, 214, 214);
-}
-
 .act_link{
+    display: flex;
+    padding: 0 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: rgba(22, 22, 22, 0.8);
+    font-family: var(--font);
     height: 60px;
     align-items: center;
 }
 
-
+.act_link:nth-child(2n){
+    height: 60px;
+    align-items: center;
+    border-left: 1px solid rgb(215, 214, 214);
+    border-right: 1px solid rgb(215, 214, 214);
+}
 
 
 .act_link:hover{
@@ -170,7 +176,7 @@ hr{
     }
 
     .act_button_sec{
-        padding-left: 110px;
+        padding-left: 50px;
     }
 }
 
@@ -189,7 +195,6 @@ hr{
 
     .act_button_sec{
         text-align: center;
-        padding-left: 2rem;
     }
 
    .act_titulo{
