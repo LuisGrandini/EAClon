@@ -176,8 +176,8 @@ hr{
     }
 
     .act_button_sec{
-        padding-left: 50px;
-        font-size: 11px;
+        padding-left: 100px;
+        font-size: 10px;
     }
 
     .act_top_container{
@@ -216,6 +216,11 @@ hr{
    .act_noticias_container{
     padding: 0;
     padding-top: 4rem;
+   }
+
+   .act_botones{
+    padding-right: 0;
+    padding-left: 50px;
    }
 }
 
