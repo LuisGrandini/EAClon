@@ -6,8 +6,8 @@
     --gradient-main: #0D1042;
     --gradient-second: #FE4647;
     --font: "Electronic Arts Text";
-    font-family: var(--font);
 }
+
 body{
     margin: 0;
 }
@@ -38,13 +38,14 @@ body{
 
 .act_button_sec{
     padding: 0 60px;
-    padding-left: 220px;
+    padding-left: 150px;
+    font-size: 12px;
 }
 
 .act_botones{
     display: flex;
     /* justify-content: space-evenly; */
-    padding-right: 120px;
+    padding-right: 50px;
 }
 
 .link{
@@ -162,7 +163,6 @@ hr{
 
 .descripcion{
     margin-top: 0.35em;
-    font-family: var(--font);
 }
 
 .link{
@@ -177,6 +177,11 @@ hr{
 
     .act_button_sec{
         padding-left: 50px;
+        font-size: 11px;
+    }
+
+    .act_top_container{
+        padding: 0;
     }
 }
 
@@ -195,6 +200,8 @@ hr{
 
     .act_button_sec{
         text-align: center;
+        padding: 0;
+        font-size: 11px;
     }
 
    .act_titulo{
@@ -215,5 +222,14 @@ hr{
 @media (max-width:684px){
     .act_top{
         margin: 0;
+    }
+
+    .act_botones{
+        font-size: 12px;
+        width: 800px;
+    }
+
+    .actualizacion{
+        width: fit-content;
     }
 }
