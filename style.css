@@ -8,6 +8,8 @@
     --font: "Electronic Arts Text";
 }
 
+/* Comienzo estilos de Latest Updates */
+
 body{
     margin: 0;
 }
@@ -238,3 +240,5 @@ hr{
         width: fit-content;
     }
 }
+
+/* Fin estilos de Latest Updates */
