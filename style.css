@@ -45,6 +45,18 @@ body{
 .btn-ea-play:hover{
     transform: scale(1.15);
 }
+
+#act_boton_mas{
+    max-width: fit-content;
+    
+}
+
+.act_div_bot{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
 /*Esto es el estilo del sidebar menu de eaPlay*/
 .ea-play-menu{
     display: none;
