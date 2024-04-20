@@ -653,8 +653,11 @@ body{
         transform: translateX(-20px);
         .slider-ea-play-card{
             width: 450px;
+        }
     }
-}
+    .ea-play-price-card-logo-and-prices svg{
+        width: 20% !important;
+    }
     .sidebar-ea-play-close-btn{
         display: block !important;
     }
@@ -664,7 +667,7 @@ body{
             text-align: center;
         }
         .btn-ea-play:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
     .banner-ea-play-bottom{
