@@ -5,834 +5,1433 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text" rel="stylesheet"> 
+    <!--GlideJS-->
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">    
+    
     <title>EA Clon</title>
 </head>
 <body>
-    <!-- Comienzo de seccion Latest Updates -->
-    <div class="actualizacion">
-        <div class="act_top_container">
-            <div class="act_top">
-                <h3 class="act_titulo">Últimas actualizaciones</h3>
+        <!-- Comienzo de seccion Latest Updates -->
+        <div class="actualizacion">
+            <div class="act_top_container">
+                <div class="act_top">
+                    <h3 class="act_titulo">Últimas actualizaciones</h3>
+                </div>
             </div>
-        </div>
-        <div class="act_button_container">
-            <div class="act_button_sec">
-                <div class="act_botones">
-                    <a class="act_link" id="act_link_news" href="#ea-news">Noticias De EA</a>
-                    <a class="act_link" id="act_link_sports" href="#ea-sports-fc">EA SPORTS FC</a>
-                    <a class="act_link" id="act_link_star" href="#star-wars">Star Wars</a>
-                    <a class="act_link" id="act_link_apex" href="#apex-legends">Apex Legends</a>
-                    <a class="act_link" id="act_link_sims" href="#the-sims">Los Sims 4</a>
-                    <a class="act_link" id="act_link_f1" href="#f1-2021">F1</a>
-                    <a class="act_link" id="act_link_battle" href="#battlefield">Battlefield</a>
+            <div class="act_button_container">
+                <div class="act_button_sec">
+                    <div class="act_botones">
+                        <a class="act_link" id="act_link_news" href="#ea-news">Noticias De EA</a>
+                        <a class="act_link" id="act_link_sports" href="#ea-sports-fc">EA SPORTS FC</a>
+                        <a class="act_link" id="act_link_star" href="#star-wars">Star Wars</a>
+                        <a class="act_link" id="act_link_apex" href="#apex-legends">Apex Legends</a>
+                        <a class="act_link" id="act_link_sims" href="#the-sims">Los Sims 4</a>
+                        <a class="act_link" id="act_link_f1" href="#f1-2021">F1</a>
+                        <a class="act_link" id="act_link_battle" href="#battlefield">Battlefield</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="act_noticias_container">
+                <div class="act_card_container">
+                        <div class="act_card" id="act_card01">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/eacom-news-ambient-purple-thumbnail.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Electronic Arts Inc.</span>
+                                            <span class="fecha">27-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            La carrera de Kate Kellogg liderando la evolución de los videojuegos en Ele…
+                                        </h3>
+                                        <div class="descripcion">
+                                            Repasamos la trayectoria de Kate Kellogg como directora de operaciones de los estudios de EA, profundizando en su liderazgo, el estilo de sus colaboraciones y su visión para el futuro de los videojuegos.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card" id="act_card02">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/ea-app/common/machome-v3-mock.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Electronic Arts Inc.</span>
+                                            <span class="fecha">26-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            La nueva EA app para Mac
+                                        </h3>
+                                        <div class="descripcion">
+                                            La nueva EA app para Mac sustituye a Origin como nuestra plataforma principal para Mac.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card" id="act_card03">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/maxis/common/ts4-dark-and-lovely-1-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Maxis</span>
+                                            <span class="fecha">25-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Cómo Los Sims y sus colaboradores aumentan la diversidad y la representació…
+                                        </h3>
+                                        <div class="descripcion">
+                                            Maxis se alía con Dark & Lovely y Danielle "Ebonix" Udogaranya para ayudar a más personas jugadoras a verse reflejadas en el juego
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card" id="act_card04">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/eacom-news-ambient-purple-thumbnail.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Electronic Arts Inc.</span>
+                                            <span class="fecha">20-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Un vistazo a la extraordinaria trayectoria de liderazgo de Kate Gorman
+                                        </h3>
+                                        <div class="descripcion">
+                                            Conoce los logros de Kate Gorman como vicepresidenta y directora general de Los Sims, descubriendo sus hitos profesionales y la innovación en el entretenimiento interactivo.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card" id="act_card05">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-com-ambient-orange.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Electronic Arts Inc.</span>
+                                            <span class="fecha">14-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Tiffany Everett: La vida de una responsable global de redes sociales de EA …
+                                        </h3>
+                                        <div class="descripcion">
+                                            Conoce a Tiffany Everett, responsable global de redes sociales de EA SPORTS, y aprende más sobre su trayectoria profesional, su trabajo con la Super Bowl y por qué es fundamental hacer nuevos contactos.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card" id="act_card06">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-com-ambient-orange.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Electronic Arts Inc.</span>
+                                            <span class="fecha">13-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Celebramos el liderazgo femenino en los videojuegos con Charity Joy
+                                        </h3>
+                                        <div class="descripcion">
+                                            Explora el camino de Charity Joy de productora a directora general de EA, su visión sobre la diversidad en los videojuegos y sus ideas sobre el futuro de la industria.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_1" id="act_card11">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/fc/common/fc-franchise-feature-image-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">21-mar-2024</span>
+                                            <span class="fecha"></span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            EA SPORTS FC™ 24 - Oferta de 2024 MLS Season Pass para FC Founders
+                                        </h3>
+                                        <div class="descripcion">
+                                            A SPORTS FC™ y Apple se han unido y te dan 1 mes de prueba gratuita* del 2024 MLS Season Pass.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_1" id="act_card12">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/articles/fc-24-spring-update/fc-24-spring-update-thumbnail.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">12-mar-2024</span>
+                                            <span class="fecha"></span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            EA SPORTS FC™ 24 | Notas a pie de campo - Actualización de primavera
+                                        </h3>
+                                        <div class="descripcion">
+                                            La actualización de primavera añade 86 nuevos rostros y renueva la experiencia de juego gracias a los ajustes en los estilos de juego y en la dificultad Leyenda de la IA de la CPU.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_1" id="act_card13">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/common/buy/fc24-pre-order-ultimate-edition-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">02-feb-2024</span>
+                                            <span class="fecha"></span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Actualización del DCP de ligas del TOTY 86+ - Sitio oficial de EA SPORTS
+                                        </h3>
+                                        <div class="descripcion">
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_1" id="act_card14">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/articles/fc-24-holiday-update/fc-24-holiday-update-001.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">05-dic-2023</span>
+                                            <span class="fecha"></span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            EA SPORTS FC™ 24 | Notas a pie de campo - Actualización festiva
+                                        </h3>
+                                        <div class="descripcion">
+                                            Ya tenemos la actualización festiva (6.ª actualización) y estamos deseando de contaros todos los cambios y novedades para EA SPORTS FC™ 24.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_1" id="act_card15">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/common/homepage/euro-offer/fc24-uefa-euro-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">23-nov-2023</span>
+                                            <span class="fecha"></span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            EA SPORTS FC™ 24 - UEFA EURO 2024
+                                        </h3>
+                                        <div class="descripcion">
+                                            EA SPORTS FC 24 da la bienvenida a la UEFA EURO 2024™ al Club: juega ahora y consigue un jugador de la UEFA EURO 2024 en Ultimate Team™.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_1" id="act_card16">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/articles/24-days-of-ea-sports-fc-24/fc24-pundit-picks-featured-img.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">03-nov-2023</span>
+                                            <span class="fecha"></span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Ultimate Team™ 24 - Elecciones de especialista
+                                        </h3>
+                                        <div class="descripcion">
+                                            resentamos las elecciones de especialista en Ultimate Team™ 24
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_2" id="act_card21">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/04/thumbnail-04-apr-update-thumbnail.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Star Wars™ Galaxy of Heroes</span>
+                                            <span class="fecha">01-abr-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Vista previa del calendario de abril
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡Echa un vistazo a los próximos eventos!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_2" id="act_card22">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/goh-on-pc-announce-gameplay-v02.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Star Wars™ Galaxy of Heroes.</span>
+                                            <span class="fecha">26-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            STAR WARS™: Galaxy of Heroes llega a PC
+                                        </h3>
+                                        <div class="descripcion">
+                                            STAR WARS™: Galaxy of Heroes llega a PC
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_2" id="act_card23">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/04/swgoh-charcard-boomadier-2d-2d-thumb.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Star Wars™ Galaxy of Heroes</span>
+                                            <span class="fecha">26-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Revelación de kit - Bumbadero gungan
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡Echa un vistazo a las habilidades del bumbadero gungan en esta revelación de kit!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_2" id="act_card24">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/03/swgoh-charcard-queen-amidala-2d-thumb.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Star Wars™ Galaxy of Heroes</span>
+                                            <span class="fecha">13-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Revelación de kit - Reina Amidala
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡Echa un vistazo a las habilidades de la reina Amidala en esta revelación de kit!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_2" id="act_card25">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/03/swgoh-charcard-captain-tarpals-2d-thumb.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Star Wars™ Galaxy of Heroes</span>
+                                            <span class="fecha">13-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Revelación de kit - Reina Amidala
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡Echa un vistazo a las habilidades de la reina Amidala en esta revelación de kit!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_2" id="act_card26">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/03/thumbnail-03-mar-update.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Star Wars™ Galaxy of Heroes</span>
+                                            <span class="fecha">27-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Vista previa del calendario de marzo
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡Echa un vistazo a los próximos eventos!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_3" id="act_card31">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/shadow-society-ce/apex-shadow-society-event-primary-art-3840x2160.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Apex Legends</span>
+                                            <span class="fecha">21-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Domina la clandestinidad en el evento Sociedad oculta
+                                        </h3>
+                                        <div class="descripcion">
+                                            Protege tu terreno en Asedio, consigue reputación y empuña el nuevo Katar de cobalto en el evento Sociedad oculta.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_3" id="act_card32">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/compete/common/algs-bp-s1playoffs.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Apex Legends</span>
+                                            <span class="fecha">17-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Eliminatorias de la División 1 de la ALGS: anuncio de recinto + fechas
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡Nuestro primer evento LAN del año se celebrará del 2 al 5 de mayo en el Galen Center de Los Ángeles! Descubre aquí la información inicial.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_3" id="act_card33">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/inner-beast-ce/inner-beasts-ce-thumbnail.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Apex Legends</span>
+                                            <span class="fecha">04-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Comienza La caza en el evento de colección Bestia interior
+                                        </h3>
+                                        <div class="descripcion">
+                                            Conviértete en una leyenda cazadora o en presa en La caza y honra a Odín completando retos.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_3" id="act_card34">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/s20-launch-map-worldsedge-r01-v01.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Apex Legends</span>
+                                            <span class="fecha">12-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Notas del parche de Apex Legends™: Revelación
+                                        </h3>
+                                        <div class="descripcion">
+                                            Prepárate para la llegada de Revelación con las especificaciones de la fabricación 2.0, mejoras de leyenda, cambios del equilibrio y más.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_3" id="act_card35">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/5th-year-anniversary-article/s20-launch-anniversary-lb-wt-cr-a2-r03-v03.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Apex Legends</span>
+                                            <span class="fecha">08-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Celebra 5 años de Apex Legends con el evento de colección del aniversario
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡Celebra el 5.º aniversario, juega y obtén elementos cosméticos con un nuevo MTL, un registro de recompensas creado por la comunidad y más!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_3" id="act_card36">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-rewards.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Apex Legends</span>
+                                            <span class="fecha">06-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Recompensas de Apex Legends™: Revelación
+                                        </h3>
+                                        <div class="descripcion">
+                                            Todo lo que necesitas saber sobre las próximas recompensas de Revelación en Apex Legends™.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_4" id="act_card41">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-dark-and-lovely-1-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Los Sims 4</span>
+                                            <span class="fecha">25-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Cómo Los Sims y sus colaboradores aumentan la diversidad y la representació…
+                                        </h3>
+                                        <div class="descripcion">
+                                            Maxis se alía con Dark & Lovely y Danielle "Ebonix" Udogaranya para ayudar a más personas jugadoras a verse reflejadas en el juego
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_4" id="act_card42">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2019/04/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Los Sims 4</span>
+                                            <span class="fecha">06-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Actualización: 06/03/2024
+                                        </h3>
+                                        <div class="descripcion">
+                                            Actualizaciones cruciales para los principales problemas de la comunidad
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_4" id="act_card43">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2019/04/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Los Sims 4</span>
+                                            <span class="fecha">28-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Actualización: 28/02/2024
+                                        </h3>
+                                        <div class="descripcion">
+                                            Dos correcciones
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_4" id="act_card44">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-plumbob-jewelry-blog-5.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Los Sims 4</span>
+                                            <span class="fecha">28-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            La colección de joyas de Los Sims en la vida real con Plumbobs
+                                        </h3>
+                                        <div class="descripcion">
+                                            Compra la colección de joyas de Plumbob de Los Sims 4 Creaciones Cristalinas Pack de Accesorios.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_4" id="act_card45">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2019/04/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Los Sims 4</span>
+                                            <span class="fecha">27-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Actualización: 02/27/2024
+                                        </h3>
+                                        <div class="descripcion">
+                                            Una actualización brillante
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_4" id="act_card46">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-ymts-arethabee-blog-asset-1.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Los Sims 4</span>
+                                            <span class="fecha">22-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            Joyas de ArethaBee en Los Sims 4 Creaciones Cristalinas
+                                        </h3>
+                                        <div class="descripcion">
+                                            Tú haces Los Sims con ArethaBee.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_5" id="act_card51">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/max-celebration-article/f123hm-max-parcferme.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">F1® 23</span>
+                                            <span class="fecha">12-dic-2023</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            EA SPORTS™ F1® - CELEBRACIÓN DE MAX
+                                        </h3>
+                                        <div class="descripcion">
+                                            Revive un año sensacional
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_5" id="act_card52">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/news/f123-driver-ratings-16x9-06-dec.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">F1® 23</span>
+                                            <span class="fecha">07-dic-2023</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            ACTUALIZACIÓN DE LAS VALORACIONES DE PILOTOS DE F1® 23 (FINAL DE TEMPORADA)
+                                        </h3>
+                                        <div class="descripcion">
+                                            Ya está aquí la última actualización de las valoraciones de pilotos de F1® 23, teniendo en cuenta Las Vegas y el cierre en Abu Dabi.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_5" id="act_card53">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/patch-note-v115/hm-f1sportsupdate.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">F1® 23</span>
+                                            <span class="fecha">16-oct-2023</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            NOTAS DEL PARCHE DE F1® 23 (v1.15)
+                                        </h3>
+                                        <div class="descripcion">
+                                            En esta actualización llegan dos cambios importantes en la actualización deportiva y en F2™ 23.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_5" id="act_card54">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/sports-update/eas-f123-f1sportsupdate.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">F1® 23</span>
+                                            <span class="fecha">16-oct-2023</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            HA LLEGADO F2™ 2023 Y LA ACTUALIZACIÓN DEPORTIVA
+                                        </h3>
+                                        <div class="descripcion">
+                                            Revive la temporada de Formula 2™ de este año ahora mismo en F1® 23.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_5" id="act_card55">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/news/f123-driver-ratings-16x9-03-sept.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">F1® 23</span>
+                                            <span class="fecha">19-sep-2023</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            ACTUALIZACIÓN DE LAS VALORACIONES DE PILOTOS DE F1® 23 (SEPTIEMBRE)
+                                        </h3>
+                                        <div class="descripcion">
+                                            Los Grand Prix de Países Bajos e Italia son los últimos incluidos en la actualización de las valoraciones de pilotos de F1® 23.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_5" id="act_card56">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/patch-note-v110/pj-f123-ned-036-ric.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">F1® 23</span>
+                                            <span class="fecha">29-ago-2023</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            NOTAS DEL PARCHE DE F1® 23 (v1.10)
+                                        </h3>
+                                        <div class="descripcion">
+                                            Con este parche de F1® 23 llegan grandes añadidos y un australiano favorito de la afición.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_6" id="act_card61">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/kin-701-hf.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Battlefield 2042</span>
+                                            <span class="fecha">28-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            ACTUALIZACIÓN N.º 7.0.1 DE BATTLEFIELD 2042
+                                        </h3>
+                                        <div class="descripcion">
+                                            Pequeño parche después de la actualización 7.0 de Battlefield 2042.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_6" id="act_card62">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/kin-com-ac-2809.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Battlefield 2042</span>
+                                            <span class="fecha">27-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            EA anticheat y Battlefield
+                                        </h3>
+                                        <div class="descripcion">
+                                            Battlefield 2042, Battlefield V, EA anticheat
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_6" id="act_card63">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/update-7-0-0/images/2024/03/bf2042-patchnotes700-featuredimage.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Battlefield 2042</span>
+                                            <span class="fecha">15-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            ACTUALIZACIÓN N.º 7.0.0 DE BATTLEFIELD 2042
+                                        </h3>
+                                        <div class="descripcion">
+                                            Aquí tenéis un vistazo general a la temporada 7: Punto de inflexión
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_6" id="act_card64">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/bfc-u70-tp-devnote.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Battlefield 2042</span>
+                                            <span class="fecha">14-mar-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            NOTAS DEL DESARROLLO - REFUGIO
+                                        </h3>
+                                        <div class="descripcion">
+                                            Un nuevo vistazo entre bastidores al proceso de creación del mapa para la temporada 7.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_6" id="act_card65">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/kin-u64-24.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Battlefield 2042</span>
+                                            <span class="fecha">23-feb-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            ACTUALIZACIÓN N.º 6.4.0 DE BATTLEFIELD 2042
+                                        </h3>
+                                        <div class="descripcion">
+                                            Aquí podéis ver una lista de mejoras de jugabilidad que pretenden corregir diversos problemas relacionados con Battlefield 2042.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="act_card_6" id="act_card66">
+                            <div class="div_link">
+                                <a  class="link" href="#">
+                                    <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/bfc-u63-j24.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
+                                    <div class="act_card_abajo">
+                                        <h2 class="texto-arriba">
+                                            <span class="Logo">Battlefield 2042</span>
+                                            <span class="fecha">26-ene-2024</span>
+                                        </h2>
+                                        <h3 class="act_h3">
+                                            ACTUALIZACIÓN N.º 6.3.0 DE BATTLEFIELD 2042
+                                        </h3>
+                                        <div class="descripcion">
+                                            ¡La actualización 6.3.0 incluye el nuevo modificador de espectador de patrulla y nuevos cambios de equilibrio en Battlefield 2042!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="act_noticias_container">
-            <div class="act_card_container">
-                    <div class="act_card" id="act_card01">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/eacom-news-ambient-purple-thumbnail.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Electronic Arts Inc.</span>
-                                        <span class="fecha">27-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        La carrera de Kate Kellogg liderando la evolución de los videojuegos en Ele…
-                                    </h3>
-                                    <div class="descripcion">
-                                        Repasamos la trayectoria de Kate Kellogg como directora de operaciones de los estudios de EA, profundizando en su liderazgo, el estilo de sus colaboraciones y su visión para el futuro de los videojuegos.
+        <script src="updates.js"></script>
+        <!-- Fin de seccion Latest Updates -->
+    <!--Esto es la sidebar de EAPLAY, lo mejor seria tenerlo cerca del banner-->
+    <section class="ea-play-menu">
+        <div class="ea-play-menu-background"></div>
+        <aside class="sidebar-ea-play-menu">
+            <div class="data-sidebar-ea-play-menu" id="data-sidebar-ea-play-menu">
+                <div class="sidebar-ea-play-close-btn">
+                    <div class="close-line-a"></div>
+                    <div class="close-line-b"></div>
+                </div>
+                <img class="ea-play-logo" src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
+                <h3>No te limites a jugar. Saca más partido a tus juegos.</h3>
+                <h6>Desbloquea recompensas exclusivas, contenido solo para miembros y una biblioteca
+                de los mejores títulos a partir de 5,99€ al mes.</h6>
+                <div class="ea-play-menu-bar"></div>
+                <h5>Paso 1</h5>
+                <div class="btns-ea-play-menu">
+                    <a class="ea-play-menu-card ea-app-card" href="#hidden-menu-container">
+                        <div class="ea-play-menu-card-left">
+                            <img class="small-logo-ea-menu" src="./assets/images/ea-small-logo.svg">
+                            <h3>EA App</h3>
+                        </div>
+                        <div class="ea-play-menu-card-right">
+                            <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                            <svg viewBox="0 0 73 16" preserveAspectRatio="xMidYMid meet" focusable="false" 
+                            style="pointer-events: none; display: block; width: 40%; height: 40%; fill: var(--electronic-tag)">
+                            <g clip-path="url(#clip2)">
+                                <path d="M55.7349 1.79688C57.7855 1.79688 59.266 3.15396 59.266 4.9734C59.266 6.8084 57.7855 8.18106 55.7349 8.18106H53.1129V12.5913H51.7559V1.79688H55.7349ZM57.9256 4.9734C57.9256 3.81634 57.062 3.01502 55.7361 3.01502H53.1141V6.99406H55.7361C57.0309 6.99406 57.9256 6.14603 57.9256 4.9734Z"></path>
+                                <path d="M49.3703 4.89543H47.3185L45.1289 9.42905L42.8927 4.89543H40.7031L44.003 11.6198L41.7979 16.0001H43.9264L49.3703 4.89543ZM36.1527 10.9418C34.9657 10.9418 34.0087 10.0315 34.0087 8.73673C34.0087 7.44073 34.9645 6.53161 36.1527 6.53161C37.3553 6.53161 38.2968 7.44192 38.2968 8.73673C38.2968 10.0315 37.3565 10.9418 36.1527 10.9418ZM35.8138 12.7002C36.7696 12.7002 37.6344 12.3457 38.2812 11.7444V12.5924H40.2396V4.89543H38.2812V5.74347C37.6643 5.12661 36.8163 4.77206 35.8904 4.77206C33.8853 4.77206 32.0659 6.43818 32.0659 8.73553C32.0659 11.0341 33.8554 12.7002 35.8138 12.7002ZM31.0478 1.17871L29.0894 1.79557V12.5912H31.0478V1.17871ZM24.2468 6.83944H21.7793V3.69286H24.2468C25.2649 3.69286 25.974 4.34086 25.974 5.26555C25.974 6.19144 25.2649 6.83944 24.2468 6.83944ZM19.6509 1.79557V12.5912H21.7793V8.65887H24.4013C26.5142 8.65887 28.0869 7.19398 28.0869 5.20446C28.0869 3.23052 26.5753 1.79557 24.4779 1.79557H19.6509V1.79557Z"></path>
+                                <path d="M68.2266 11.5585C66.7929 11.5585 65.6514 10.417 65.6514 8.82876C65.6514 7.2405 66.7929 6.09901 68.2266 6.09901C69.6604 6.09901 70.8019 7.2405 70.8019 8.82876C70.8019 10.417 69.6616 11.5585 68.2266 11.5585ZM68.2266 4.92638C66.0527 4.92638 64.3554 6.57692 64.3554 8.82756C64.3554 11.0794 66.0515 12.7299 68.2266 12.7299C70.4018 12.7299 72.0979 11.0794 72.0979 8.82756C72.0979 6.57692 70.4018 4.92638 68.2266 4.92638ZM61.5646 5.08089H60.2686V12.5922H61.5646V8.22627C61.5646 6.88475 62.7372 5.88221 64.1398 6.14452V4.91081C62.9827 4.75629 62.058 5.28092 61.5646 6.3757V5.08089Z"></path>
+                                <g clip-path="url(#clip3)"><path d="M7.40402 0C3.44239 0 0.230957 3.21225 0.230957 7.17306C0.230957 11.1355 3.44239 14.3461 7.40402 14.3461C11.3657 14.3461 14.5771 11.1355 14.5771 7.17306C14.5771 3.21225 11.3657 0 7.40402 0ZM4.54606 4.35102H8.66932L8.0432 5.35347H3.91994L4.54606 4.35102ZM11.435 9.36082L10.8081 8.36H8.9779L9.60565 7.35755H10.1836L9.48483 6.24163L7.53545 9.36H2.33545L3.58769 7.35673H2.66851L3.29381 6.35429H7.31422L6.6881 7.35837H4.77055L4.14361 8.36082H6.97953L9.48483 4.35102L12.6163 9.36163H11.435V9.36082Z"></path></g></g>
+                                <defs><clipPath id="clip2"><rect width="71.867" height="16" transform="translate(0.230957)"></rect></clipPath><clipPath id="clip3"><rect width="14.3673" height="14.3673" transform="translate(0.230957)"></rect></clipPath></defs>
+                            </svg>                    
+        
+                        </div>
+                    </a>
+                    <a class="ea-play-menu-card steam-card" href="https://smarturl.it/ea-play-steam">
+                        <div class="ea-play-menu-card-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px" viewBox="0 0 256 259" version="1.1" preserveAspectRatio="xMidYMid">
+                                <g>
+                                    <path d="M127.778579,0 C60.4203546,0 5.24030561,52.412282 0,119.013983 L68.7236558,147.68805 C74.5451924,143.665561 81.5845466,141.322185 89.1497766,141.322185 C89.8324924,141.322185 90.5059824,141.340637 91.1702465,141.377541 L121.735621,96.668877 L121.735621,96.0415165 C121.735621,69.1388208 143.425688,47.2457835 170.088511,47.2457835 C196.751333,47.2457835 218.441401,69.1388208 218.441401,96.0415165 C218.441401,122.944212 196.751333,144.846475 170.088511,144.846475 C169.719475,144.846475 169.359666,144.83725 168.99063,144.828024 L125.398299,176.205276 C125.425977,176.786507 125.444428,177.367738 125.444428,177.939743 C125.444428,198.144443 109.160732,214.575753 89.1497766,214.575753 C71.5836817,214.575753 56.8868387,201.917832 53.5655182,185.163615 L4.40997549,164.654462 C19.6326942,218.967277 69.0834655,258.786219 127.778579,258.786219 C198.596511,258.786219 256,200.847629 256,129.393109 C256,57.9293643 198.596511,0 127.778579,0 Z M80.3519677,196.332478 L64.6033732,189.763644 C67.389592,195.63131 72.2239585,200.539484 78.6359521,203.233444 C92.4932392,209.064206 108.472481,202.430791 114.247888,188.435116 C117.043333,181.663313 117.061785,174.190342 114.294018,167.400086 C111.526251,160.609831 106.295171,155.31417 99.5879487,152.491048 C92.9176301,149.695603 85.7767911,149.797088 79.5031858,152.186594 L95.777656,158.976849 C105.999942,163.276114 110.834309,175.122157 106.571948,185.436702 C102.318812,195.751247 90.574254,200.631743 80.3519677,196.332478 Z M202.30901,96.0424391 C202.30901,78.1165345 187.85204,63.5211763 170.092201,63.5211763 C152.323137,63.5211763 137.866167,78.1165345 137.866167,96.0424391 C137.866167,113.968344 152.323137,128.554476 170.092201,128.554476 C187.85204,128.554476 202.30901,113.968344 202.30901,96.0424391 Z M145.938821,95.9870838 C145.938821,82.4988323 156.779242,71.5661525 170.138331,71.5661525 C183.506646,71.5661525 194.347066,82.4988323 194.347066,95.9870838 C194.347066,109.475335 183.506646,120.408015 170.138331,120.408015 C156.779242,120.408015 145.938821,109.475335 145.938821,95.9870838 Z" fill="var(--light-color)"/>
+                                </g>
+                            </svg>                            
+                            <h3>Steam</h3>
+                        </div>
+                        <div class="ea-play-menu-card-right">
+                            <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                        </div>
+                    </a>
+                    <a class="ea-play-menu-card playstation-card" href="https://smarturl.it/ea-play-playstation">
+                        <div class="ea-play-menu-card-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" preserveAspectRatio="xMidYMid" viewBox="-29.7 -38.20475 257.4 229.2285"><path d="M196.24 116.962c-3.869 4.88-13.344 8.36-13.344 8.36l-70.492 25.32V131.97l51.877-18.484c5.887-2.11 6.791-5.091 2.006-6.657-4.776-1.57-13.425-1.12-19.316.999l-34.567 12.174v-19.379l1.993-.674s9.988-3.535 24.034-5.091c14.045-1.547 31.242.211 44.743 5.329 15.215 4.808 16.928 11.895 13.065 16.775zm-77.125-31.796V37.413c0-5.608-1.035-10.77-6.297-12.232-4.03-1.291-6.53 2.45-6.53 8.054V152.82l-32.25-10.236V0c13.712 2.545 33.69 8.563 44.429 12.183 27.312 9.377 36.572 21.048 36.572 47.344 0 25.63-15.821 35.344-35.924 25.639zM14.862 130.018c-15.62-4.399-18.219-13.564-11.1-18.844 6.58-4.875 17.77-8.545 17.77-8.545l46.241-16.442v18.745L34.497 116.84c-5.878 2.109-6.782 5.095-2.005 6.66 4.78 1.565 13.433 1.12 19.32-.994l15.961-5.792v16.77c-1.012.18-2.14.36-3.184.535-15.966 2.609-32.97 1.52-49.727-4.002zm171.105 7.425c2.02 0 3.913.782 5.339 2.226a7.487 7.487 0 012.212 5.334 7.472 7.472 0 01-2.212 5.334 7.465 7.465 0 01-5.339 2.217 7.472 7.472 0 01-5.338-2.217 7.467 7.467 0 01-2.208-5.334c0-4.165 3.382-7.56 7.546-7.56zm-6.278 7.56c0 1.677.652 3.256 1.84 4.434a6.2 6.2 0 004.438 1.844 6.281 6.281 0 006.279-6.278c0-1.682-.648-3.26-1.84-4.444a6.195 6.195 0 00-4.439-1.839 6.195 6.195 0 00-4.439 1.84 6.227 6.227 0 00-1.839 4.443zm8.558-4.07c.828.364 1.246 1.066 1.246 2.064 0 .513-.108.944-.328 1.282-.158.243-.382.44-.634.611.198.117.373.257.503.419.18.233.284.607.297 1.115l.04 1.075c.014.288.032.508.077.643.045.198.13.324.239.364l.112.054v.49h-1.628l-.054-.094a1.477 1.477 0 01-.108-.328 5.105 5.105 0 01-.058-.657l-.068-1.336c-.018-.463-.175-.75-.472-.904-.185-.085-.49-.125-.904-.125h-2.29v3.444h-1.461v-8.405h3.904c.638 0 1.174.094 1.587.288zm-4.03 3.386h2.33c.468 0 .841-.085 1.107-.26.243-.176.36-.495.36-.959 0-.503-.167-.832-.518-1.007-.193-.094-.463-.148-.805-.148h-2.473v2.374z" fill="var(--light-color)" fill-rule="evenodd"/>
+                            </svg>
+                            <h3>Playstation</h3>
+                        </div>
+                        <div class="ea-play-menu-card-right">
+                            <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                        </div>
+                    </a>
+                    <a class="ea-play-menu-card xbox-card" href="https://smarturl.it/ea-play-xbox">
+                        <div class="ea-play-menu-card-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 41.257 10.983 c -3.77 -1.913 -9.585 -3.967 -12.796 -4.522 c -1.125 -0.193 -3.045 -0.303 -4.265 -0.24 c -2.651 0.134 -2.533 -0.004 1.718 -2.012 c 3.534 -1.67 6.482 -2.651 10.486 -3.492 C 40.9 -0.23 49.363 -0.24 53.792 0.693 c 4.783 1.009 10.417 3.105 13.591 5.06 l 0.945 0.579 l -2.164 -0.109 c -4.303 -0.217 -10.574 1.521 -17.306 4.795 c -2.03 0.989 -3.795 1.777 -3.925 1.756 c -0.129 -0.025 -1.784 -0.831 -3.68 -1.793 H 41.257 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--light-color); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 81.19 70.83 c 0.415 -2.024 -0.11 -5.74 -1.338 -9.489 c -2.661 -8.118 -11.556 -23.219 -19.725 -33.488 l -2.572 -3.233 l 2.783 -2.554 c 3.632 -3.335 6.154 -5.332 8.876 -7.029 c 2.146 -1.338 5.215 -2.523 6.534 -2.523 c 0.812 0 3.676 2.98 5.986 6.22 c 3.58 5.018 6.212 11.113 7.546 17.449 c 0.862 4.098 0.935 12.859 0.139 16.947 c -0.659 3.354 -2.039 7.701 -3.377 10.65 c -1.014 2.209 -3.513 6.501 -4.61 7.897 c -0.565 0.718 -0.565 0.717 -0.251 -0.832 L 81.19 70.83 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--light-color); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 40.515 89.815 c -6.929 -0.664 -13.944 -3.152 -19.97 -7.084 c -5.05 -3.293 -6.189 -4.649 -6.189 -7.352 c 0 -5.429 5.97 -14.94 16.184 -25.779 c 5.799 -6.158 13.878 -13.371 14.751 -13.177 c 1.7 0.379 15.28 13.626 20.365 19.864 c 8.04 9.859 11.734 17.934 9.857 21.533 c -1.427 2.736 -10.284 8.084 -16.79 10.139 C 53.359 89.653 46.316 90.37 40.515 89.815 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--light-color); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 7.535 69.735 C 3.339 63.297 1.219 56.96 0.196 47.793 c -0.339 -3.027 -0.22 -4.757 0.766 -10.971 c 1.226 -7.736 5.635 -16.696 10.935 -22.205 c 2.256 -2.342 2.457 -2.405 5.208 -1.474 c 3.335 1.129 6.9 3.592 12.43 8.594 l 3.23 2.921 L 31 26.821 c -8.184 10.047 -16.821 24.296 -20.073 33.109 C 9.161 64.719 8.45 69.528 9.213 71.53 c 0.512 1.353 0.042 0.849 -1.683 -1.792 L 7.535 69.735 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--light-color); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                                </svg>
+                            <h3>Xbox</h3>
+                        </div>
+                        <div class="ea-play-menu-card-right">
+                            <img class="logo-card-right-ea-play" src="./assets/images/ea-play-logo-coral-hero-logo-225px.svg">
+                        </div>
+                    </a>
+                    <span class="ea-play-menu-small-info">
+                        Tu selección de miembro solo se aplica a 1 plataforma.
+                    </span>
+                </div>
+                <div class="ea-play-menu-bar ea-play-second-bar"></div>
+                <h3 class="ea-play-menu-select-info">Haz una selección para continuar</h3>
+                <div class="ea-play-menu-hidden-info">
+                    <div id="hidden-menu-container">
+                        <h5>Paso 2</h5>
+                        <h3>Selecciona una suscripción</h3>
+                        <div class="price-cards-ea-play-container">
+                            <a class="ea-play-menu-card first-price-card" href="#first-subhidden-menu">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="img-prices-ea-play-card">
+                                        <img class="logo-ea-play-price" src="./assets/images/logo-ea-play-med.svg">
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>5,99€/mes</h5>
+                                        <h5>39,99€/año</h5>
                                     </div>
                                 </div>
+                                <h5 class="price-ea-play-card-info-text">Los miembros obtienen mas recompensas, más contenido exclusivo
+                                    y acceso ilimitado a los mejores títulos.
+                                </h5>
                             </a>
-                        </div>
-                    </div>
-                    <div class="act_card" id="act_card02">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/ea-app/common/machome-v3-mock.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Electronic Arts Inc.</span>
-                                        <span class="fecha">26-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        La nueva EA app para Mac
-                                    </h3>
-                                    <div class="descripcion">
-                                        La nueva EA app para Mac sustituye a Origin como nuestra plataforma principal para Mac.
+                            <a class="ea-play-menu-card second-price-card" href="#second-subhidden-menu">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                        <svg viewBox="0 0 73 16" preserveAspectRatio="xMidYMid meet" focusable="false" 
+                                        style="pointer-events: none; display: block; width: 40%; height: 40%; fill: var(--electronic-tag); padding-top: 10px;">
+                                        <g clip-path="url(#clip2)">
+                                            <path d="M55.7349 1.79688C57.7855 1.79688 59.266 3.15396 59.266 4.9734C59.266 6.8084 57.7855 8.18106 55.7349 8.18106H53.1129V12.5913H51.7559V1.79688H55.7349ZM57.9256 4.9734C57.9256 3.81634 57.062 3.01502 55.7361 3.01502H53.1141V6.99406H55.7361C57.0309 6.99406 57.9256 6.14603 57.9256 4.9734Z"></path>
+                                            <path d="M49.3703 4.89543H47.3185L45.1289 9.42905L42.8927 4.89543H40.7031L44.003 11.6198L41.7979 16.0001H43.9264L49.3703 4.89543ZM36.1527 10.9418C34.9657 10.9418 34.0087 10.0315 34.0087 8.73673C34.0087 7.44073 34.9645 6.53161 36.1527 6.53161C37.3553 6.53161 38.2968 7.44192 38.2968 8.73673C38.2968 10.0315 37.3565 10.9418 36.1527 10.9418ZM35.8138 12.7002C36.7696 12.7002 37.6344 12.3457 38.2812 11.7444V12.5924H40.2396V4.89543H38.2812V5.74347C37.6643 5.12661 36.8163 4.77206 35.8904 4.77206C33.8853 4.77206 32.0659 6.43818 32.0659 8.73553C32.0659 11.0341 33.8554 12.7002 35.8138 12.7002ZM31.0478 1.17871L29.0894 1.79557V12.5912H31.0478V1.17871ZM24.2468 6.83944H21.7793V3.69286H24.2468C25.2649 3.69286 25.974 4.34086 25.974 5.26555C25.974 6.19144 25.2649 6.83944 24.2468 6.83944ZM19.6509 1.79557V12.5912H21.7793V8.65887H24.4013C26.5142 8.65887 28.0869 7.19398 28.0869 5.20446C28.0869 3.23052 26.5753 1.79557 24.4779 1.79557H19.6509V1.79557Z"></path>
+                                            <path d="M68.2266 11.5585C66.7929 11.5585 65.6514 10.417 65.6514 8.82876C65.6514 7.2405 66.7929 6.09901 68.2266 6.09901C69.6604 6.09901 70.8019 7.2405 70.8019 8.82876C70.8019 10.417 69.6616 11.5585 68.2266 11.5585ZM68.2266 4.92638C66.0527 4.92638 64.3554 6.57692 64.3554 8.82756C64.3554 11.0794 66.0515 12.7299 68.2266 12.7299C70.4018 12.7299 72.0979 11.0794 72.0979 8.82756C72.0979 6.57692 70.4018 4.92638 68.2266 4.92638ZM61.5646 5.08089H60.2686V12.5922H61.5646V8.22627C61.5646 6.88475 62.7372 5.88221 64.1398 6.14452V4.91081C62.9827 4.75629 62.058 5.28092 61.5646 6.3757V5.08089Z"></path>
+                                            <g clip-path="url(#clip3)"><path d="M7.40402 0C3.44239 0 0.230957 3.21225 0.230957 7.17306C0.230957 11.1355 3.44239 14.3461 7.40402 14.3461C11.3657 14.3461 14.5771 11.1355 14.5771 7.17306C14.5771 3.21225 11.3657 0 7.40402 0ZM4.54606 4.35102H8.66932L8.0432 5.35347H3.91994L4.54606 4.35102ZM11.435 9.36082L10.8081 8.36H8.9779L9.60565 7.35755H10.1836L9.48483 6.24163L7.53545 9.36H2.33545L3.58769 7.35673H2.66851L3.29381 6.35429H7.31422L6.6881 7.35837H4.77055L4.14361 8.36082H6.97953L9.48483 4.35102L12.6163 9.36163H11.435V9.36082Z"></path></g></g>
+                                            <defs><clipPath id="clip2"><rect width="71.867" height="16" transform="translate(0.230957)"></rect></clipPath><clipPath id="clip3"><rect width="14.3673" height="14.3673" transform="translate(0.230957)"></rect></clipPath></defs>
+                                        </svg>                    
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>16,99€/mes</h5>
+                                        <h5>119,99€/año</h5>
                                     </div>
                                 </div>
+                                <h5 class="price-ea-play-card-info-text">Los miembros Pro obtienen
+                                    acceso ilimitado a nuestros últimos títulos en cuanto se lancen,
+                                    además de recompensas y contenido solo para miembros.
+                                </h5>
                             </a>
                         </div>
+                        <button class="ea-play-prices-info-tag" href="#">Comparar Membresías</button>
+                        <a class="ea-play-prices-info-link" href="https://www.ea.com/es-es/ea-play/faq#ea-desktop-faq">
+                            Preguntas frecuentes de EA Play
+                        </a>
+                        <div class="ea-play-menu-bar"></div>
                     </div>
-                    <div class="act_card" id="act_card03">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/maxis/common/ts4-dark-and-lovely-1-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Maxis</span>
-                                        <span class="fecha">25-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Cómo Los Sims y sus colaboradores aumentan la diversidad y la representació…
-                                    </h3>
-                                    <div class="descripcion">
-                                        Maxis se alía con Dark & Lovely y Danielle "Ebonix" Udogaranya para ayudar a más personas jugadoras a verse reflejadas en el juego
+                    <h3 class="ea-play-menu-select-info second-select">Haz una selección para continuar</h3>
+                </div>
+                <div class="ea-play-menu-second-hidden-info">
+                    <div class="hidden-menu-container" id="first-subhidden-menu">
+                        <h5>Paso 3</h5>
+                        <h3>Selecciona un plan de pago</h3>
+                        <div class="price-cards-ea-play-container ea-plans-container">
+                            <a class="ea-play-menu-card price-anual-card" href="#anual-end-sale-ea-play">
+                                    <div class="ea-play-price-card-logo-and-prices">
+                                        <div class="text-prices-hidden-ea-play-card">
+                                            <h3>Anual</h3>
+                                            <h3 class="best-price-tag">Mejor Precio</h3>
+                                        </div>
+                                        <div class="prices-ea-play-price-card">
+                                            <h5>39,99€/año</h5>
+                                        </div>
+                                    </div>
+                                    <h5 class="price-ea-play-card-info-text">Suscríbete un año y ahorra
+                                        un 44% en comparación con el precio mensual.
+                                    </h5>
+                            </a>
+                            <a class="ea-play-menu-card price-monthly-card" href="#monthly-end-sale-ea-play">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="img-prices-ea-play-card">
+                                        <h3>Mensual</h3>
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>5,99€/mes</h5>
                                     </div>
                                 </div>
+                                <h5 class="price-ea-play-card-info-text">Paga mes a mes para
+                                    acceder a una colección dinámica de juegos.
+                                </h5>
                             </a>
+                            <div class="ea-play-menu-bar"></div>
                         </div>
                     </div>
-                    <div class="act_card" id="act_card04">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/eacom-news-ambient-purple-thumbnail.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Electronic Arts Inc.</span>
-                                        <span class="fecha">20-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Un vistazo a la extraordinaria trayectoria de liderazgo de Kate Gorman
-                                    </h3>
-                                    <div class="descripcion">
-                                        Conoce los logros de Kate Gorman como vicepresidenta y directora general de Los Sims, descubriendo sus hitos profesionales y la innovación en el entretenimiento interactivo.
+                    <div class="hidden-menu-container" id="second-subhidden-menu">
+                        <h5>Paso 3</h5>
+                        <h3>Selecciona un plan de pago</h3>
+                        <div class="price-cards-ea-play-container ea-plans-container">
+                            <a class="ea-play-menu-card price-anual-card-pro" href="#anual-end-sale-ea-play-pro">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="text-prices-hidden-ea-play-card">
+                                        <h3>Anual</h3>
+                                        <h3 class="best-price-tag">Mejor Precio</h3>
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>119,99€/año</h5>
                                     </div>
                                 </div>
+                                <h5 class="price-ea-play-card-info-text">Suscríbete un año y ahorra
+                                    un 44% en comparación con el precio mensual.
+                                </h5>
                             </a>
-                        </div>
-                    </div>
-                    <div class="act_card" id="act_card05">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-com-ambient-orange.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Electronic Arts Inc.</span>
-                                        <span class="fecha">14-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Tiffany Everett: La vida de una responsable global de redes sociales de EA …
-                                    </h3>
-                                    <div class="descripcion">
-                                        Conoce a Tiffany Everett, responsable global de redes sociales de EA SPORTS, y aprende más sobre su trayectoria profesional, su trabajo con la Super Bowl y por qué es fundamental hacer nuevos contactos.
+                            <a class="ea-play-menu-card price-monthly-card-pro" href="#monthly-end-sale-ea-play-pro">
+                                <div class="ea-play-price-card-logo-and-prices">
+                                    <div class="img-prices-ea-play-card">
+                                        <h3>Mensual</h3>
+                                    </div>
+                                    <div class="prices-ea-play-price-card">
+                                        <h5>16,99€/mes</h5>
                                     </div>
                                 </div>
+                                <h5 class="price-ea-play-card-info-text">Paga mes a mes para
+                                    acceder a una colección dinámica de juegos.
+                                </h5>
                             </a>
+                            <div class="ea-play-menu-bar"></div>
                         </div>
                     </div>
-                    <div class="act_card" id="act_card06">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-com-ambient-orange.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Electronic Arts Inc.</span>
-                                        <span class="fecha">13-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Celebramos el liderazgo femenino en los videojuegos con Charity Joy
-                                    </h3>
-                                    <div class="descripcion">
-                                        Explora el camino de Charity Joy de productora a directora general de EA, su visión sobre la diversidad en los videojuegos y sus ideas sobre el futuro de la industria.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                </div>
+                <div class="ea-play-menu-last-hidden-info" id="anual-end-sale-ea-play">
+                    <h5>Tu selección</h5>
+                    <h6>EA app para Windows</h6>
+                    <h6 class="last-hidden-info-tag">Membresía anual</h6>
+                    <img class="logo-ea-play-price" src="./assets/images/logo-ea-play-med.svg">
+                    <ul class="last-hidden-info-list">
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Obtén acceso a una biblioteca de juegos y complementos
+                                    con <a href="#">The Play List</a>
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Juega hasta 10 horas con nuevos títulos
+                                    seleccionados antes de su lanzamiento.                                    
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Ahorra un 10% en compras digitales de EA
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Desbloquea recompensas en el juego exclusivas
+                                    para miembros.                                    
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5 class="ea-terms-text">Sujeto a condiciones, limitaciones y exclusiones.
+                        Consulta los <a href="#" class="ea-terms">Términos de EA Play</a> para obtener más información.
+                    </h5>
+                    <div class="ea-play-menu-bar"></div>
+                    <div class="last-hidden-price-tag anual-plan-sale">
+                        <h5>Mejor Precio</h5>
+                        <h6>Equivalente a 3,33€/mes</h6>
+                        <h3>39,99€/año</h3>
+                        <a href="#" class="ea-terms">pueden aplicarse impuestos aplicables</a>
+                        <a hef="#" class="btn-ea-play sale-btn">Finalizar compra</a>
+                        <h5 class="info-tag">
+                            Vendedor: EA Swiss Sàrl, Place du Molard 8, 1204, Ginebra, 
+                            Suiza Inscrita en el Registro Mercantil de Ginebra con número de inscripción: 
+                            CH-660-2328005-8. Correo electrónico: contact_eahelp@ea.com
+                        </h5>
                     </div>
-                    <div class="act_card_1" id="act_card11">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/fc/common/fc-franchise-feature-image-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">21-mar-2024</span>
-                                        <span class="fecha"></span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        EA SPORTS FC™ 24 - Oferta de 2024 MLS Season Pass para FC Founders
-                                    </h3>
-                                    <div class="descripcion">
-                                        A SPORTS FC™ y Apple se han unido y te dan 1 mes de prueba gratuita* del 2024 MLS Season Pass.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                </div>
+                <div class="ea-play-menu-last-hidden-info" id="monthly-end-sale-ea-play">
+                    <h5>Tu selección</h5>
+                    <h6>EA app para Windows</h6>
+                    <h6 class="last-hidden-info-tag">Membresía mensual</h6>
+                    <img class="logo-ea-play-price" src="./assets/images/logo-ea-play-med.svg">
+                    <ul class="last-hidden-info-list">
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Obtén acceso a una biblioteca de juegos y complementos
+                                    con <a href="#">The Play List</a>
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Juega hasta 10 horas con nuevos títulos
+                                    seleccionados antes de su lanzamiento.                                    
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Ahorra un 10% en compras digitales de EA
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Desbloquea recompensas en el juego exclusivas
+                                    para miembros.                                    
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5 class="ea-terms-text">Sujeto a condiciones, limitaciones y exclusiones.
+                        Consulta los <a href="#" class="ea-terms">Términos de EA Play</a> para obtener más información.
+                    </h5>
+                    <div class="ea-play-menu-bar"></div>
+                    <div class="last-hidden-price-tag anual-plan-sale">
+                        <h3>5,99€/mes</h3>
+                        <a href="#" class="ea-terms">pueden aplicarse impuestos aplicables</a>
+                        <a hef="#" class="btn-ea-play sale-btn">Finalizar compra</a>
+                        <h5 class="info-tag">
+                            Vendedor: EA Swiss Sàrl, Place du Molard 8, 1204, Ginebra, 
+                            Suiza Inscrita en el Registro Mercantil de Ginebra con número de inscripción: 
+                            CH-660-2328005-8. Correo electrónico: contact_eahelp@ea.com
+                        </h5>
                     </div>
-                    <div class="act_card_1" id="act_card12">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/articles/fc-24-spring-update/fc-24-spring-update-thumbnail.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">12-mar-2024</span>
-                                        <span class="fecha"></span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        EA SPORTS FC™ 24 | Notas a pie de campo - Actualización de primavera
-                                    </h3>
-                                    <div class="descripcion">
-                                        La actualización de primavera añade 86 nuevos rostros y renueva la experiencia de juego gracias a los ajustes en los estilos de juego y en la dificultad Leyenda de la IA de la CPU.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                </div>
+                <div class="ea-play-menu-last-hidden-info" id="anual-end-sale-ea-play-pro">
+                    <h5>Tu selección</h5>
+                    <h6>EA app para Windows</h6>
+                    <h6 class="last-hidden-info-tag">Membresía anual</h6>
+                    <svg viewBox="0 0 73 16" preserveAspectRatio="xMidYMid meet" focusable="false" 
+                    style="pointer-events: none; display: block; width: 35%; height: 35%; fill: var(--electronic-tag)">
+                    <g clip-path="url(#clip2)">
+                        <path d="M55.7349 1.79688C57.7855 1.79688 59.266 3.15396 59.266 4.9734C59.266 6.8084 57.7855 8.18106 55.7349 8.18106H53.1129V12.5913H51.7559V1.79688H55.7349ZM57.9256 4.9734C57.9256 3.81634 57.062 3.01502 55.7361 3.01502H53.1141V6.99406H55.7361C57.0309 6.99406 57.9256 6.14603 57.9256 4.9734Z"></path>
+                        <path d="M49.3703 4.89543H47.3185L45.1289 9.42905L42.8927 4.89543H40.7031L44.003 11.6198L41.7979 16.0001H43.9264L49.3703 4.89543ZM36.1527 10.9418C34.9657 10.9418 34.0087 10.0315 34.0087 8.73673C34.0087 7.44073 34.9645 6.53161 36.1527 6.53161C37.3553 6.53161 38.2968 7.44192 38.2968 8.73673C38.2968 10.0315 37.3565 10.9418 36.1527 10.9418ZM35.8138 12.7002C36.7696 12.7002 37.6344 12.3457 38.2812 11.7444V12.5924H40.2396V4.89543H38.2812V5.74347C37.6643 5.12661 36.8163 4.77206 35.8904 4.77206C33.8853 4.77206 32.0659 6.43818 32.0659 8.73553C32.0659 11.0341 33.8554 12.7002 35.8138 12.7002ZM31.0478 1.17871L29.0894 1.79557V12.5912H31.0478V1.17871ZM24.2468 6.83944H21.7793V3.69286H24.2468C25.2649 3.69286 25.974 4.34086 25.974 5.26555C25.974 6.19144 25.2649 6.83944 24.2468 6.83944ZM19.6509 1.79557V12.5912H21.7793V8.65887H24.4013C26.5142 8.65887 28.0869 7.19398 28.0869 5.20446C28.0869 3.23052 26.5753 1.79557 24.4779 1.79557H19.6509V1.79557Z"></path>
+                        <path d="M68.2266 11.5585C66.7929 11.5585 65.6514 10.417 65.6514 8.82876C65.6514 7.2405 66.7929 6.09901 68.2266 6.09901C69.6604 6.09901 70.8019 7.2405 70.8019 8.82876C70.8019 10.417 69.6616 11.5585 68.2266 11.5585ZM68.2266 4.92638C66.0527 4.92638 64.3554 6.57692 64.3554 8.82756C64.3554 11.0794 66.0515 12.7299 68.2266 12.7299C70.4018 12.7299 72.0979 11.0794 72.0979 8.82756C72.0979 6.57692 70.4018 4.92638 68.2266 4.92638ZM61.5646 5.08089H60.2686V12.5922H61.5646V8.22627C61.5646 6.88475 62.7372 5.88221 64.1398 6.14452V4.91081C62.9827 4.75629 62.058 5.28092 61.5646 6.3757V5.08089Z"></path>
+                        <g clip-path="url(#clip3)"><path d="M7.40402 0C3.44239 0 0.230957 3.21225 0.230957 7.17306C0.230957 11.1355 3.44239 14.3461 7.40402 14.3461C11.3657 14.3461 14.5771 11.1355 14.5771 7.17306C14.5771 3.21225 11.3657 0 7.40402 0ZM4.54606 4.35102H8.66932L8.0432 5.35347H3.91994L4.54606 4.35102ZM11.435 9.36082L10.8081 8.36H8.9779L9.60565 7.35755H10.1836L9.48483 6.24163L7.53545 9.36H2.33545L3.58769 7.35673H2.66851L3.29381 6.35429H7.31422L6.6881 7.35837H4.77055L4.14361 8.36082H6.97953L9.48483 4.35102L12.6163 9.36163H11.435V9.36082Z"></path></g></g>
+                        <defs><clipPath id="clip2"><rect width="71.867" height="16" transform="translate(0.230957)"></rect></clipPath><clipPath id="clip3"><rect width="14.3673" height="14.3673" transform="translate(0.230957)"></rect></clipPath></defs>
+                    </svg>                    
+                    <ul class="last-hidden-info-list">
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Obtén acceso a una biblioteca de juegos y complementos
+                                    con <a href="#">The Play List</a>
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Juega hasta 10 horas con nuevos títulos
+                                    seleccionados antes de su lanzamiento.                                    
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Ahorra un 10% en compras digitales de EA
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Desbloquea recompensas en el juego exclusivas
+                                    para miembros.                                    
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5 class="ea-terms-text">Sujeto a condiciones, limitaciones y exclusiones.
+                        Consulta los <a href="#" class="ea-terms">Términos de EA Play</a> para obtener más información.
+                    </h5>
+                    <div class="ea-play-menu-bar"></div>
+                    <div class="last-hidden-price-tag anual-plan-sale">
+                        <h5>Mejor Precio</h5>
+                        <h6>Equivalente a 10,00€/mes</h6>
+                        <h3>119,99€/año</h3>
+                        <a href="#" class="ea-terms">pueden aplicarse impuestos aplicables</a>
+                        <a hef="#" class="btn-ea-play sale-btn">Finalizar compra</a>
+                        <h5 class="info-tag">
+                            Vendedor: EA Swiss Sàrl, Place du Molard 8, 1204, Ginebra, 
+                            Suiza Inscrita en el Registro Mercantil de Ginebra con número de inscripción: 
+                            CH-660-2328005-8. Correo electrónico: contact_eahelp@ea.com
+                        </h5>
                     </div>
-                    <div class="act_card_1" id="act_card13">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/common/buy/fc24-pre-order-ultimate-edition-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">02-feb-2024</span>
-                                        <span class="fecha"></span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Actualización del DCP de ligas del TOTY 86+ - Sitio oficial de EA SPORTS
-                                    </h3>
-                                    <div class="descripcion">
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                </div>
+                <div class="ea-play-menu-last-hidden-info" id="monthly-end-sale-ea-play-pro">
+                    <h5>Tu selección</h5>
+                    <h6>EA app para Windows</h6>
+                    <h6 class="last-hidden-info-tag">Membresía mensual</h6>
+                    <svg viewBox="0 0 73 16" preserveAspectRatio="xMidYMid meet" focusable="false" 
+                    style="pointer-events: none; display: block; width: 35%; height: 35%; fill: var(--electronic-tag)">
+                    <g clip-path="url(#clip2)">
+                        <path d="M55.7349 1.79688C57.7855 1.79688 59.266 3.15396 59.266 4.9734C59.266 6.8084 57.7855 8.18106 55.7349 8.18106H53.1129V12.5913H51.7559V1.79688H55.7349ZM57.9256 4.9734C57.9256 3.81634 57.062 3.01502 55.7361 3.01502H53.1141V6.99406H55.7361C57.0309 6.99406 57.9256 6.14603 57.9256 4.9734Z"></path>
+                        <path d="M49.3703 4.89543H47.3185L45.1289 9.42905L42.8927 4.89543H40.7031L44.003 11.6198L41.7979 16.0001H43.9264L49.3703 4.89543ZM36.1527 10.9418C34.9657 10.9418 34.0087 10.0315 34.0087 8.73673C34.0087 7.44073 34.9645 6.53161 36.1527 6.53161C37.3553 6.53161 38.2968 7.44192 38.2968 8.73673C38.2968 10.0315 37.3565 10.9418 36.1527 10.9418ZM35.8138 12.7002C36.7696 12.7002 37.6344 12.3457 38.2812 11.7444V12.5924H40.2396V4.89543H38.2812V5.74347C37.6643 5.12661 36.8163 4.77206 35.8904 4.77206C33.8853 4.77206 32.0659 6.43818 32.0659 8.73553C32.0659 11.0341 33.8554 12.7002 35.8138 12.7002ZM31.0478 1.17871L29.0894 1.79557V12.5912H31.0478V1.17871ZM24.2468 6.83944H21.7793V3.69286H24.2468C25.2649 3.69286 25.974 4.34086 25.974 5.26555C25.974 6.19144 25.2649 6.83944 24.2468 6.83944ZM19.6509 1.79557V12.5912H21.7793V8.65887H24.4013C26.5142 8.65887 28.0869 7.19398 28.0869 5.20446C28.0869 3.23052 26.5753 1.79557 24.4779 1.79557H19.6509V1.79557Z"></path>
+                        <path d="M68.2266 11.5585C66.7929 11.5585 65.6514 10.417 65.6514 8.82876C65.6514 7.2405 66.7929 6.09901 68.2266 6.09901C69.6604 6.09901 70.8019 7.2405 70.8019 8.82876C70.8019 10.417 69.6616 11.5585 68.2266 11.5585ZM68.2266 4.92638C66.0527 4.92638 64.3554 6.57692 64.3554 8.82756C64.3554 11.0794 66.0515 12.7299 68.2266 12.7299C70.4018 12.7299 72.0979 11.0794 72.0979 8.82756C72.0979 6.57692 70.4018 4.92638 68.2266 4.92638ZM61.5646 5.08089H60.2686V12.5922H61.5646V8.22627C61.5646 6.88475 62.7372 5.88221 64.1398 6.14452V4.91081C62.9827 4.75629 62.058 5.28092 61.5646 6.3757V5.08089Z"></path>
+                        <g clip-path="url(#clip3)"><path d="M7.40402 0C3.44239 0 0.230957 3.21225 0.230957 7.17306C0.230957 11.1355 3.44239 14.3461 7.40402 14.3461C11.3657 14.3461 14.5771 11.1355 14.5771 7.17306C14.5771 3.21225 11.3657 0 7.40402 0ZM4.54606 4.35102H8.66932L8.0432 5.35347H3.91994L4.54606 4.35102ZM11.435 9.36082L10.8081 8.36H8.9779L9.60565 7.35755H10.1836L9.48483 6.24163L7.53545 9.36H2.33545L3.58769 7.35673H2.66851L3.29381 6.35429H7.31422L6.6881 7.35837H4.77055L4.14361 8.36082H6.97953L9.48483 4.35102L12.6163 9.36163H11.435V9.36082Z"></path></g></g>
+                        <defs><clipPath id="clip2"><rect width="71.867" height="16" transform="translate(0.230957)"></rect></clipPath><clipPath id="clip3"><rect width="14.3673" height="14.3673" transform="translate(0.230957)"></rect></clipPath></defs>
+                    </svg>                    
+                    <ul class="last-hidden-info-list">
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Obtén acceso a una biblioteca de juegos y complementos
+                                    con <a href="#">The Play List</a>
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Juega hasta 10 horas con nuevos títulos
+                                    seleccionados antes de su lanzamiento.                                    
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Ahorra un 10% en compras digitales de EA
+                                </h5>
+                            </div>
+                        </li>
+                        <li class="last-hidden-info">
+                            <div class="last-hidden-info-container">
+                                <svg fill="var(--light-color)" height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/>
+                                </svg>
+                                <h5>Desbloquea recompensas en el juego exclusivas
+                                    para miembros.                                    
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5 class="ea-terms-text">Sujeto a condiciones, limitaciones y exclusiones.
+                        Consulta los <a href="#" class="ea-terms">Términos de EA Play</a> para obtener más información.
+                    </h5>
+                    <div class="ea-play-menu-bar"></div>
+                    <div class="last-hidden-price-tag anual-plan-sale">
+                        <h3>16,99€/mes</h3>
+                        <a href="#" class="ea-terms">pueden aplicarse impuestos aplicables</a>
+                        <a hef="#" class="btn-ea-play sale-btn">Finalizar compra</a>
+                        <h5 class="info-tag">
+                            Vendedor: EA Swiss Sàrl, Place du Molard 8, 1204, Ginebra, 
+                            Suiza Inscrita en el Registro Mercantil de Ginebra con número de inscripción: 
+                            CH-660-2328005-8. Correo electrónico: contact_eahelp@ea.com
+                        </h5>
                     </div>
-                    <div class="act_card_1" id="act_card14">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/articles/fc-24-holiday-update/fc-24-holiday-update-001.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">05-dic-2023</span>
-                                        <span class="fecha"></span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        EA SPORTS FC™ 24 | Notas a pie de campo - Actualización festiva
-                                    </h3>
-                                    <div class="descripcion">
-                                        Ya tenemos la actualización festiva (6.ª actualización) y estamos deseando de contaros todos los cambios y novedades para EA SPORTS FC™ 24.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                </div>                                                
+            </div>
+        </aside>
+    </section>
+    <section class="banner-ea-play-container">
+        <div class="banner-ea-play-top">
+            <div class="text-and-slider-container-ea-play">
+                <div class="text-banner-ea-play">
+                    <img src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
+                    <h6 class="text-style-banner">No te limites a jugar. Saca más partido a tus juegos.
+                        Desbloquea recompensas exclusivas,
+                        contenido para los miembros y una biblioteca de los mejores títulos.</h6>
+                    <div class="btn-container">
+                        <a class="btn-ea-play" id="aside-opener-btn" href="#data-sidebar-ea-play-menu">Únete ya</a>
                     </div>
-                    <div class="act_card_1" id="act_card15">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/common/homepage/euro-offer/fc24-uefa-euro-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">23-nov-2023</span>
-                                        <span class="fecha"></span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        EA SPORTS FC™ 24 - UEFA EURO 2024
-                                    </h3>
-                                    <div class="descripcion">
-                                        EA SPORTS FC 24 da la bienvenida a la UEFA EURO 2024™ al Club: juega ahora y consigue un jugador de la UEFA EURO 2024 en Ultimate Team™.
-                                    </div>
-                                </div>
-                            </a>
+                </div>
+                <div class="slider-banner-ea-play">
+                    <div class="slider-cards-container">
+            
+                        <!--Glide Operativo, en principio se va a quedar asi y en todo caso se cambiará visualmente, no a nivel funcional-->
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play first-link">
+                                        <div class="slider-ea-play-card first-card">
+                                            <h6 class="slider-card-text">Consigue acceso ilimitado a algunos
+                                                de los mejores juegos de EA por solo 3,99€/Mes*. Puedes cancelar
+                                                en cualquier momento.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Más Info</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play second-link">
+                                        <div class="slider-ea-play-card second-card">
+                                            <h6 class="slider-card-text">Puedes probar determinados juegos
+                                                nuevos durante un máximo de 10 horas, tu progreso se trasnferirá al
+                                                juego completo si lo compras.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Descubre las pruebas de juego</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play third-link">
+                                        <div class="slider-ea-play-card third-card">
+                                            <h6 class="slider-card-text">Como miembro, puedes desbloquear
+                                                recompensas y desafíos en el juego que te permitirán mejorar
+                                                la experiencia y destacar entre la multitud.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Explorar recompensas</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play fourth-link">
+                                        <div class="slider-ea-play-card fourth-card">
+                                            <h6 class="slider-card-text">Accede a The Play List, donde siempre
+                                                tendrás algo a lo que jugar con acceso ilimitado a una colección de
+                                                las series y títulos mas famosos entre nuestros fans.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">The Play List</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="card-link-ea-play fifth-link">
+                                        <div class="slider-ea-play-card fifth-card">
+                                            <h6 class="slider-card-text">Consigue un 10% de descuento en tus
+                                                compras de contenido digital de Electronic Arts, incluidas descargas
+                                                de juegos, pases de temporada, paquetes de puntos y DLC.
+                                            </h6>
+                                            <h4 class="slider-card-text info-tag">Detalles</h4>
+                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span><</span></button>
+                                <!--<div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                                </div>-->
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span>></span></button>
+                            </div>
                         </div>
+                        <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+                        <script>
+                            const glide = new Glide('.glide', {
+                                type: 'slider',
+                                startAt: 0,
+                                focusAt: 'center',
+                                autoplay: 5000,
+                                hoverpause: true,
+                                perView: 1,
+                            })
+                            glide.mount()
+                        </script>
                     </div>
-                    <div class="act_card_1" id="act_card16">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/articles/24-days-of-ea-sports-fc-24/fc24-pundit-picks-featured-img.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">03-nov-2023</span>
-                                        <span class="fecha"></span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Ultimate Team™ 24 - Elecciones de especialista
-                                    </h3>
-                                    <div class="descripcion">
-                                        resentamos las elecciones de especialista en Ultimate Team™ 24
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_2" id="act_card21">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/04/thumbnail-04-apr-update-thumbnail.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Star Wars™ Galaxy of Heroes</span>
-                                        <span class="fecha">01-abr-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Vista previa del calendario de abril
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡Echa un vistazo a los próximos eventos!
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_2" id="act_card22">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/goh-on-pc-announce-gameplay-v02.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Star Wars™ Galaxy of Heroes.</span>
-                                        <span class="fecha">26-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        STAR WARS™: Galaxy of Heroes llega a PC
-                                    </h3>
-                                    <div class="descripcion">
-                                        STAR WARS™: Galaxy of Heroes llega a PC
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_2" id="act_card23">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/04/swgoh-charcard-boomadier-2d-2d-thumb.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Star Wars™ Galaxy of Heroes</span>
-                                        <span class="fecha">26-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Revelación de kit - Bumbadero gungan
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡Echa un vistazo a las habilidades del bumbadero gungan en esta revelación de kit!
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_2" id="act_card24">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/03/swgoh-charcard-queen-amidala-2d-thumb.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Star Wars™ Galaxy of Heroes</span>
-                                        <span class="fecha">13-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Revelación de kit - Reina Amidala
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡Echa un vistazo a las habilidades de la reina Amidala en esta revelación de kit!
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_2" id="act_card25">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/03/swgoh-charcard-captain-tarpals-2d-thumb.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Star Wars™ Galaxy of Heroes</span>
-                                        <span class="fecha">13-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Revelación de kit - Reina Amidala
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡Echa un vistazo a las habilidades de la reina Amidala en esta revelación de kit!
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_2" id="act_card26">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/swgoh/common/2024/03/thumbnail-03-mar-update.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Star Wars™ Galaxy of Heroes</span>
-                                        <span class="fecha">27-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Vista previa del calendario de marzo
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡Echa un vistazo a los próximos eventos!
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_3" id="act_card31">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/shadow-society-ce/apex-shadow-society-event-primary-art-3840x2160.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Apex Legends</span>
-                                        <span class="fecha">21-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Domina la clandestinidad en el evento Sociedad oculta
-                                    </h3>
-                                    <div class="descripcion">
-                                        Protege tu terreno en Asedio, consigue reputación y empuña el nuevo Katar de cobalto en el evento Sociedad oculta.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_3" id="act_card32">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/compete/common/algs-bp-s1playoffs.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Apex Legends</span>
-                                        <span class="fecha">17-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Eliminatorias de la División 1 de la ALGS: anuncio de recinto + fechas
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡Nuestro primer evento LAN del año se celebrará del 2 al 5 de mayo en el Galen Center de Los Ángeles! Descubre aquí la información inicial.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_3" id="act_card33">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/inner-beast-ce/inner-beasts-ce-thumbnail.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Apex Legends</span>
-                                        <span class="fecha">04-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Comienza La caza en el evento de colección Bestia interior
-                                    </h3>
-                                    <div class="descripcion">
-                                        Conviértete en una leyenda cazadora o en presa en La caza y honra a Odín completando retos.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_3" id="act_card34">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/s20-launch-map-worldsedge-r01-v01.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Apex Legends</span>
-                                        <span class="fecha">12-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Notas del parche de Apex Legends™: Revelación
-                                    </h3>
-                                    <div class="descripcion">
-                                        Prepárate para la llegada de Revelación con las especificaciones de la fabricación 2.0, mejoras de leyenda, cambios del equilibrio y más.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_3" id="act_card35">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/5th-year-anniversary-article/s20-launch-anniversary-lb-wt-cr-a2-r03-v03.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Apex Legends</span>
-                                        <span class="fecha">08-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Celebra 5 años de Apex Legends con el evento de colección del aniversario
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡Celebra el 5.º aniversario, juega y obtén elementos cosméticos con un nuevo MTL, un registro de recompensas creado por la comunidad y más!
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_3" id="act_card36">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-rewards.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Apex Legends</span>
-                                        <span class="fecha">06-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Recompensas de Apex Legends™: Revelación
-                                    </h3>
-                                    <div class="descripcion">
-                                        Todo lo que necesitas saber sobre las próximas recompensas de Revelación en Apex Legends™.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_4" id="act_card41">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-dark-and-lovely-1-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Los Sims 4</span>
-                                        <span class="fecha">25-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Cómo Los Sims y sus colaboradores aumentan la diversidad y la representació…
-                                    </h3>
-                                    <div class="descripcion">
-                                        Maxis se alía con Dark & Lovely y Danielle "Ebonix" Udogaranya para ayudar a más personas jugadoras a verse reflejadas en el juego
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_4" id="act_card42">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2019/04/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Los Sims 4</span>
-                                        <span class="fecha">06-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Actualización: 06/03/2024
-                                    </h3>
-                                    <div class="descripcion">
-                                        Actualizaciones cruciales para los principales problemas de la comunidad
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_4" id="act_card43">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2019/04/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Los Sims 4</span>
-                                        <span class="fecha">28-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Actualización: 28/02/2024
-                                    </h3>
-                                    <div class="descripcion">
-                                        Dos correcciones
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_4" id="act_card44">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-plumbob-jewelry-blog-5.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Los Sims 4</span>
-                                        <span class="fecha">28-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        La colección de joyas de Los Sims en la vida real con Plumbobs
-                                    </h3>
-                                    <div class="descripcion">
-                                        Compra la colección de joyas de Plumbob de Los Sims 4 Creaciones Cristalinas Pack de Accesorios.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_4" id="act_card45">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2019/04/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Los Sims 4</span>
-                                        <span class="fecha">27-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Actualización: 02/27/2024
-                                    </h3>
-                                    <div class="descripcion">
-                                        Una actualización brillante
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_4" id="act_card46">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-ymts-arethabee-blog-asset-1.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Los Sims 4</span>
-                                        <span class="fecha">22-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        Joyas de ArethaBee en Los Sims 4 Creaciones Cristalinas
-                                    </h3>
-                                    <div class="descripcion">
-                                        Tú haces Los Sims con ArethaBee.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_5" id="act_card51">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/max-celebration-article/f123hm-max-parcferme.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">F1® 23</span>
-                                        <span class="fecha">12-dic-2023</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        EA SPORTS™ F1® - CELEBRACIÓN DE MAX
-                                    </h3>
-                                    <div class="descripcion">
-                                        Revive un año sensacional
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_5" id="act_card52">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/news/f123-driver-ratings-16x9-06-dec.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">F1® 23</span>
-                                        <span class="fecha">07-dic-2023</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        ACTUALIZACIÓN DE LAS VALORACIONES DE PILOTOS DE F1® 23 (FINAL DE TEMPORADA)
-                                    </h3>
-                                    <div class="descripcion">
-                                        Ya está aquí la última actualización de las valoraciones de pilotos de F1® 23, teniendo en cuenta Las Vegas y el cierre en Abu Dabi.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_5" id="act_card53">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/patch-note-v115/hm-f1sportsupdate.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">F1® 23</span>
-                                        <span class="fecha">16-oct-2023</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        NOTAS DEL PARCHE DE F1® 23 (v1.15)
-                                    </h3>
-                                    <div class="descripcion">
-                                        En esta actualización llegan dos cambios importantes en la actualización deportiva y en F2™ 23.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_5" id="act_card54">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/sports-update/eas-f123-f1sportsupdate.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">F1® 23</span>
-                                        <span class="fecha">16-oct-2023</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        HA LLEGADO F2™ 2023 Y LA ACTUALIZACIÓN DEPORTIVA
-                                    </h3>
-                                    <div class="descripcion">
-                                        Revive la temporada de Formula 2™ de este año ahora mismo en F1® 23.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_5" id="act_card55">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/news/f123-driver-ratings-16x9-03-sept.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">F1® 23</span>
-                                        <span class="fecha">19-sep-2023</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        ACTUALIZACIÓN DE LAS VALORACIONES DE PILOTOS DE F1® 23 (SEPTIEMBRE)
-                                    </h3>
-                                    <div class="descripcion">
-                                        Los Grand Prix de Países Bajos e Italia son los últimos incluidos en la actualización de las valoraciones de pilotos de F1® 23.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_5" id="act_card56">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/patch-note-v110/pj-f123-ned-036-ric.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">F1® 23</span>
-                                        <span class="fecha">29-ago-2023</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        NOTAS DEL PARCHE DE F1® 23 (v1.10)
-                                    </h3>
-                                    <div class="descripcion">
-                                        Con este parche de F1® 23 llegan grandes añadidos y un australiano favorito de la afición.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_6" id="act_card61">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/kin-701-hf.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Battlefield 2042</span>
-                                        <span class="fecha">28-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        ACTUALIZACIÓN N.º 7.0.1 DE BATTLEFIELD 2042
-                                    </h3>
-                                    <div class="descripcion">
-                                        Pequeño parche después de la actualización 7.0 de Battlefield 2042.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_6" id="act_card62">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/kin-com-ac-2809.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Battlefield 2042</span>
-                                        <span class="fecha">27-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        EA anticheat y Battlefield
-                                    </h3>
-                                    <div class="descripcion">
-                                        Battlefield 2042, Battlefield V, EA anticheat
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_6" id="act_card63">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/update-7-0-0/images/2024/03/bf2042-patchnotes700-featuredimage.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Battlefield 2042</span>
-                                        <span class="fecha">15-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        ACTUALIZACIÓN N.º 7.0.0 DE BATTLEFIELD 2042
-                                    </h3>
-                                    <div class="descripcion">
-                                        Aquí tenéis un vistazo general a la temporada 7: Punto de inflexión
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_6" id="act_card64">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/bfc-u70-tp-devnote.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Battlefield 2042</span>
-                                        <span class="fecha">14-mar-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        NOTAS DEL DESARROLLO - REFUGIO
-                                    </h3>
-                                    <div class="descripcion">
-                                        Un nuevo vistazo entre bastidores al proceso de creación del mapa para la temporada 7.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_6" id="act_card65">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/kin-u64-24.jpg.adapt.crop16x9.431p.jpg" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Battlefield 2042</span>
-                                        <span class="fecha">23-feb-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        ACTUALIZACIÓN N.º 6.4.0 DE BATTLEFIELD 2042
-                                    </h3>
-                                    <div class="descripcion">
-                                        Aquí podéis ver una lista de mejoras de jugabilidad que pretenden corregir diversos problemas relacionados con Battlefield 2042.
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="act_card_6" id="act_card66">
-                        <div class="div_link">
-                            <a  class="link" href="#">
-                                <img src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/news/common/bfc-u63-j24.png.adapt.crop16x9.431p.png" alt="imagen" class="imagen-card">
-                                <div class="act_card_abajo">
-                                    <h2 class="texto-arriba">
-                                        <span class="Logo">Battlefield 2042</span>
-                                        <span class="fecha">26-ene-2024</span>
-                                    </h2>
-                                    <h3 class="act_h3">
-                                        ACTUALIZACIÓN N.º 6.3.0 DE BATTLEFIELD 2042
-                                    </h3>
-                                    <div class="descripcion">
-                                        ¡La actualización 6.3.0 incluye el nuevo modificador de espectador de patrulla y nuevos cambios de equilibrio en Battlefield 2042!
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="updates.js"></script>
-    <!-- Fin de seccion Latest Updates -->
+        <div class="banner-ea-play-bottom">
+            <h2 class="parental-banner-text">Herramientas parentales y de juego: el control en tus manos</h2>
+            <a href="#" class="btn-ea-play dark-btn">Más Información</a>
+        </div>
+    </section>
+     <!--Funcionalidad del sidebar-->
+     <script src="./aside-eaplay.js"></script>
 </body>
 </html>

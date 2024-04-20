@@ -2,10 +2,710 @@
     --main-color: #161616;
     --second-color: #ffffff;
     --light-color: #f3f3f3;
+    --light-color-smooth-transparency: #f3f3f371;
+    --green-color: #86D67F;
+    --light-color-transparency: #f3f3f324;
     --electronic-tag: #ff4747;
+    --electronic-tag-light: #ff6e6e;
     --gradient-main: #0D1042;
+    --gradient-main-transparency: #0d1042aa;
     --gradient-second: #FE4647;
+    --gradient-second-transparency: #fe46469f;
+    --parental-color: #6FB0D6;
     --font: "Electronic Arts Text";
+    font-family: var(--font);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+.btn-container{
+    margin:24px 0 0;
+}
+.btn-ea-play{
+    display: block;
+    position: relative;
+    padding: 12px 24px;
+    font-family: var(--font);
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0);
+    color: var(--light-color);
+    border-radius: 4px;
+    text-decoration: none;
+    border: 2px solid var(--light-color);
+    transition: 0.3s;
+}
+.dark-btn{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-ea-play:hover{
+    transform: scale(1.15);
+}
+/*Esto es el estilo del sidebar menu de eaPlay*/
+.ea-play-menu{
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: all ease-in-out 0.3s;
+}
+.ea-play-menu-background{
+    background-color: var(--main-color);
+    filter: opacity(0.5);
+    width: inherit;
+    height: inherit;
+    z-index: 98;
+}
+.sidebar-ea-play-menu{
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--gradient-main);
+    width: 425px;
+    max-width: 100%;
+    height: 100%;
+    z-index: 99;
+    flex-shrink: 0;
+    overflow: scroll;
+    scrollbar-width: none;
+    font-family: var(--font);
+    color: var(--light-color);
+    transform: translateX(100%);
+    transition: all ease-in-out 0.3s;
+    scroll-behavior: smooth;
+
+    .sidebar-ea-play-close-btn{
+        display: none;
+        box-sizing: border-box;
+        position: absolute;
+        display: inline;
+        cursor: pointer;
+        padding: 8px 5.5px 8px 3px;
+        top: 0;
+        right: 0;
+        margin: 20px;
+        border: 1px solid var(--light-color);
+        border-radius: 6px;
+
+        .close-line-a{
+            background-color: var(--light-color);
+            padding: 1px 4px;
+            width: 10px;
+            position: relative;
+            transform: rotate(45deg) translateX(1.5px);
+        }
+        .close-line-b{
+            background-color: var(--light-color);
+            padding: 1px 4px;
+            width: 10px;
+            position: relative;
+            transform: rotate(135deg) translateX(-1.5px);
+            }
+    }
+    .sidebar-ea-play-close-btn:hover{
+        border: 2px solid var(--electronic-tag);
+        .close-line-a{
+            background-color: var(--electronic-tag);
+        }
+        .close-line-b{
+            background-color: var(--electronic-tag);
+        }
+    }
+}
+.data-sidebar-ea-play-menu{
+    padding: 32px 48px 48px 32px;
+    display: flex;
+    flex-direction: column;
+    pointer-events: all;
+
+    .ea-play-logo{
+        width: 115px;
+    }
+}
+.data-sidebar-ea-play-menu h3{
+    margin: 0;
+    padding-top: 10px;
+}
+.data-sidebar-ea-play-menu h5{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.data-sidebar-ea-play-menu h6{
+    margin: 0;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--light-color);
+    filter: opacity(.5);
+}
+.ea-play-menu-bar{
+    border: 1px solid var(--light-color);
+    filter: opacity(.5);
+    margin-top: 20px;
+}
+.btns-ea-play-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ea-play-menu-small-info{
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--light-color);
+    filter: opacity(.5);
+}
+.ea-play-menu-card:hover{
+    border: 2px solid var(--electronic-tag) !important;
+}
+.ea-play-menu-card{
+    text-decoration: none;
+    border: 2px solid var(--light-color-smooth-transparency);
+    background-color: var(--light-color-transparency);
+    display: flex;
+    flex-direction: row;
+    padding: 16px 28px; 
+    align-items: center;
+    font-family: var(--font);
+    justify-content: space-between;
+    font-size: 16px;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+    
+    .ea-play-menu-card-left{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1rem;
+    }
+    .ea-play-menu-card-right{
+        display: flex;
+        max-width: 150px;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    h3{
+        text-decoration-style: none !important;
+        color: var(--light-color);
+        padding: 0;
+    }
+    .small-logo-ea-menu{
+        width: 25px;
+    }
+    .logo-card-right-ea-play{
+        width: 50px;
+        right: 0;
+        padding-top: 5px;
+    }
+    .steam-card svg{
+        color: var(--light-color);
+    }
+    
+}
+/*Estilos del segundo menú escondido*/
+#hidden-menu-container{
+    display: flex;
+    flex-direction: column;
+}
+.ea-play-menu-hidden-info{
+    display: flex;
+    flex-direction: column;
+}
+.ea-play-menu-hidden-info h3{
+    padding-bottom: 20px;
+}
+.ea-play-menu-hidden-info h5{
+    padding-bottom: 0;
+}
+
+.price-cards-ea-play-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.first-price-card{
+    flex-direction: column;
+    color: var(--light-color);
+    font-size: 16px;
+    text-align: left;
+}
+.second-price-card{
+    flex-direction: column;
+    color: var(--light-color);
+    font-size: 16px;
+    text-align: left;
+}
+.price-ea-play-card-info-text{
+    padding-bottom: 10px !important;
+}
+.ea-play-price-card-logo-and-prices{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+
+    .prices-ea-play-price-card{
+        padding-top: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+        h5{
+            padding: 0;
+        }
+    }
+}
+.ea-play-prices-info-tag{
+    background-color: transparent;
+    color: var(--electronic-tag);
+    font-family: var(--font);
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    border: 0;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+}
+.ea-play-prices-info-tag:hover{
+    text-decoration: 2px underline var(--electronic-tag);
+}
+.ea-play-prices-info-link{
+    text-decoration: none;
+    color: var(--electronic-tag);
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.ea-play-prices-info-link:hover{
+    text-decoration: 2px underline var(--electronic-tag);
+}
+.ea-play-menu-select-info{
+    position: relative;
+    align-self: center;
+    font-size: 16px;
+    padding-top: 30px !important;
+}
+.ea-play-second-bar{
+    margin-top: 40px !important;
+    opacity: .25;
+}
+.logo-ea-play-price{
+    width: 75px;
+    padding-top: 8px;
+}
+/*Estilos del segundo hidden menu del aside bar*/
+#first-subhidden-menu{
+    display: none;
+
+    .ea-plans-container{
+        padding-top: 10px;
+    }
+    h5{
+        padding: 10px 0;
+    }
+    h3{
+        padding-bottom: 10px;
+    }
+    .ea-play-menu-card{
+        color: var(--light-color);
+        flex-direction: column;
+        text-align: left;
+        
+        .ea-play-price-card-logo-and-prices{
+            flex-direction: row;
+        }
+        .text-prices-hidden-ea-play-card{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        }
+        .best-price-tag{
+            color: var(--green-color);
+            font-size: 14px;
+        }
+        .prices-ea-play-price-card{
+            padding-top: 2rem;
+        }
+    }
+}
+#second-subhidden-menu{
+    display: none;
+
+    .ea-plans-container{
+        padding-top: 10px;
+    }
+    h5{
+        padding: 10px 0;
+    }
+    h3{
+        padding-bottom: 10px;
+    }
+    .ea-play-menu-card{
+        color: var(--light-color);
+        flex-direction: column;
+        text-align: left;
+        
+        .ea-play-price-card-logo-and-prices{
+            flex-direction: row;
+        }
+        .text-prices-hidden-ea-play-card{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        }
+        .best-price-tag{
+            color: var(--green-color);
+            font-size: 14px;
+        }
+        .prices-ea-play-price-card{
+            padding-top: 2rem;
+        }
+    }
+}
+
+/*Estilos del ultimo hidden menu, hartico me tiene ya esta seccion colega*/
+.ea-play-menu-last-hidden-info{
+    display: none;
+    h6{
+        padding: 0 0 10px 0;
+    }
+    .last-hidden-info-tag{
+        font-weight: bold;
+    }
+}
+.last-hidden-info-list{
+    list-style: none;
+    padding-left: 0;
+
+    .last-hidden-info-container{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+
+        a{
+            color: var(--electronic-tag);
+        }
+        svg{
+            color: var(--light-color);
+            min-width: 14px !important;
+            padding-top: 2px;
+        }
+        h5{
+            padding-left: 10px;
+            padding-top: 0;
+            padding-bottom: 10px;
+        }
+    }
+}
+.ea-terms-text{
+    padding-top: 0 !important;
+}
+.ea-terms{
+    color:var(--electronic-tag);
+}
+
+.last-hidden-price-tag{
+    h5{
+        padding: 10px 0 0 0;
+        color: var(--green-color);
+        font-size: 14px;
+        font-weight: bold;
+    }
+    h6{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .sale-btn{
+        margin: 20px 0;
+        padding: 8px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: var(--electronic-tag);
+        border: 0px solid;
+        text-align: center;
+    }
+    .sale-btn:hover{
+        transform: scaleX(0.98);
+        background-color: var(--electronic-tag-light);
+        cursor: pointer;
+    }
+    .info-tag{
+        color: var(--light-color);
+        font-weight: lighter;
+        font-size: 12px;
+    }
+}
+ /* Estilo del banner principal de la sección EA-PLAY*/
+.banner-ea-play-top{
+    background-image: linear-gradient(45deg, var(--gradient-main) 0%, var(--gradient-main-transparency) 50%,
+    var(--gradient-second-transparency) 90%, var(--gradient-second) 100%),
+    url(https://media.contentapi.ea.com/content/dam/eacom/images/2023/09/ea-play-grid-evergreen-hero-md-7x2-xl.jpg.adapt.crop7x2.1445w.jpg);
+    background-position: center;
+    background-repeat: round;
+    max-width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    }
+.text-and-slider-container-ea-play{
+    max-width: 1360px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem 0rem;
+    flex-shrink: 0;
+}
+.slider-banner-ea-play{
+    position: relative;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 0;
+}
+.slider-cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    overflow: hidden;
+    margin-left: 2rem;
+}
+.card-link-ea-play{
+    margin-left: 3.7rem;
+    width: 450px;
+    height: fit-content;
+    display: block;
+    position: relative;
+}
+.glide__slide{
+    display: block;
+    align-self: center;
+}
+.glide__track{
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+}
+.glide__arrow {
+    color: var(--electronic-tag) !important;
+    padding: 12px 14px !important;
+    border-radius: 30px !important;
+    border: 2px solid var(--electronic-tag) !important;
+    background-color: var(--gradient-main) !important;
+}
+.glide__arrow--left:hover{
+    color: var(--gradient-main) !important;
+    border:2px solid var(--gradient-main) !important;
+    background-color: var(--electronic-tag) !important;
+}
+.glide__arrow--right:hover{
+    color: var(--gradient-main) !important;
+    border:2px solid var(--gradient-main) !important;
+    background-color: var(--electronic-tag) !important;
+}
+.slider-card-text{
+    display: none;
+}
+.slider-ea-play-card{
+    box-sizing: border-box;
+    background-image: url(./assets/images/ea-play-ex.jpg);
+    background-position: center;
+    background-size: 450px;
+    width: 450px;
+    height: 245px;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.second-card{
+    background-image: url(./assets/images/ufc5.jpg);
+    background-size: cover;
+}
+.third-card{
+    background-image: url(./assets/images/recom1.png);
+}
+.fourth-card{
+    background-image: url(./assets/images/f1.jpg);
+}
+.card-link-ea-play:hover{
+    .slider-card-text{
+        display: flex;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        justify-self: start;
+        font-size: 16px;
+        margin: 0;
+        color: var(--light-color);
+    }
+    .info-tag{
+        color:var(--light-color);
+        border: 2px solid var(--light-color);
+        padding: 3px 6px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    .slider-ea-play-card{
+        border-radius: 5px;
+        background-image: linear-gradient(45deg, var(--gradient-second) 0%, var(--gradient-main-transparency) 50%,
+         var(--gradient-main) 100%), url(./assets/images/ea-play-ex.jpg);
+    }
+    .second-card{
+        background-image: linear-gradient(45deg, var(--gradient-second) 0%, var(--gradient-main-transparency) 50%,
+        var(--gradient-main) 100%), url(./assets/images/ufc5.jpg);
+    }
+    .third-card{
+        background-image: linear-gradient(45deg, var(--gradient-second) 0%, var(--gradient-main-transparency) 50%,
+        var(--gradient-main) 100%), url(./assets/images/recom2.png);
+    }
+    .fourth-card{
+        background-image: linear-gradient(45deg, var(--gradient-second) 0%, var(--gradient-main-transparency) 50%,
+        var(--gradient-main) 100%), url(./assets/images/f1.jpg);
+    }
+    text-decoration: none;
+}
+.banner-ea-play-bottom{
+    max-width: 100%;
+    padding: 1rem 0;
+    background-color: var(--parental-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a{
+        text-align: center;
+        transform: scale(1.1);
+    }
+}
+.parental-banner-text{
+    font-size: 26px;
+    width: 50%;
+}
+
+
+.text-banner-ea-play{
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.title-style-ea{
+    color: var(--light-color);
+    border: 3px solid var(--light-color);
+    border-radius: 6px;
+    font-size: 36px;
+    margin: 1rem 0 0 0;
+    padding: 12px 24px;
+}
+.text-style-banner{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--font);
+}
+
+
+/*Aqui vamos a empezar con las media querys*/
+@media (max-width: 1025px){
+    .text-and-slider-container-ea-play{
+        width: 100%;
+        flex-direction: column;
+        padding: 2rem 0rem;
+        gap: 2rem;
+        margin-left: 0;
+    }
+    .text-banner-ea-play{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slider-banner-ea-play{
+        margin: 2rem 0;
+        align-items: center;
+        max-width: 600px;
+        transform: translateX(-20px);
+        .slider-ea-play-card{
+            width: 450px;
+        }
+    }
+    .ea-play-price-card-logo-and-prices svg{
+        width: 20% !important;
+    }
+    .sidebar-ea-play-close-btn{
+        display: block !important;
+    }
+    .btn-container{
+        width: 100%;
+        .btn-ea-play{
+            text-align: center;
+        }
+        .btn-ea-play:hover{
+            transform: scale(1.1);
+        }
+    }
+    .banner-ea-play-bottom{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 2rem 4rem 2rem !important;
+
+        a{
+            width: 80%;
+        }
+    
+        .parental-banner-text{
+            font-size: 26px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 756px) {
+    .ea-play-menu, .banner-ea-play-container{
+        overflow: hidden;
+    }
+    .sidebar-ea-play-menu{
+        width: 100% !important;
+    }
+    .slider-banner-ea-play{
+        align-items: center;
+        max-width: 525px;
+        transform: translateX(-20px);
+        .slider-ea-play-card{
+            width: 375px;
+            height: 225px;
+            background-size: cover;
+    }
+}
+
 }
 
 /* Comienzo estilos de Latest Updates */
