@@ -17,6 +17,7 @@
 }
 html{
     scroll-behavior: smooth;
+    width: fit-content;
 }
 body{
     margin: 0;
@@ -901,7 +902,7 @@ hr{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 803px){
     .act_card,.act_card_1,.act_card_2,.act_card_3,.act_card_4,.act_card_5,.act_card_6{
         width: 60%;
     }
@@ -946,7 +947,7 @@ hr{
 }
 }
 
-@media (max-width:435px){
+@media (max-width:684px){
     .act_top{
         margin: 0;
     }
