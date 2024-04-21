@@ -134,10 +134,10 @@
     background-size: cover;
 }
 .jd_gamecardufc{
-    background-image: url(/jd_imgs/jd_ufc_img.jpg);
+    background-image: url(/EAClon/assets/jd_ufc_img.jpg);
 }
 .jd_gamecardf1{
-    background-image: url(/jd_imgs/jd_f123_img.jpg);
+    background-image: url(/EAClon/assets/jd_f123_img.jpg);
 }
 .jd_gamecard:hover{
     .jd_game_logo{
@@ -149,27 +149,27 @@
     }
     .jd_gamecardufc{
         background-image: linear-gradient(90deg, var(--gradient-main-transparency) 0%,
-        var(--gradient-second-transparency) 100%),url(/jd_imgs/jd_ufc_img.jpg);
+        var(--gradient-second-transparency) 100%),url(/EAClon/assets/jd_ufc_img.jpg);
     }
     .jd_gamecardfc{
         background-image: linear-gradient(90deg, var(--gradient-main-transparency) 0%,
-        var(--gradient-second-transparency) 100%),url(/jd_imgs/jd_fc24_img.jpeg);
+        var(--gradient-second-transparency) 100%),url(/EAClon/assets/jd_fc24_img.jpeg);
     }
     .jd_gamecardf1{
         background-image: linear-gradient(90deg, var(--gradient-main-transparency) 0%,
-        var(--gradient-second-transparency) 100%),url(/jd_imgs/jd_f123_img.jpg);
+        var(--gradient-second-transparency) 100%),url(/EAClon/assets/jd_f123_img.jpg);
     }
     .jd_gamecardnfs{
         background-image: linear-gradient(90deg, var(--gradient-main-transparency) 0%,
-        var(--gradient-second-transparency) 100%),url(/jd_imgs/jd_nfs_img.png);
+        var(--gradient-second-transparency) 100%),url(/EAClon/assets/jd_nfs_img.png);
     }
     .jd_gamecardsims{
         background-image: linear-gradient(90deg, var(--gradient-main-transparency) 0%,
-        var(--gradient-second-transparency) 100%),url(/jd_imgs/jd_sims_ims.jpg);
+        var(--gradient-second-transparency) 100%),url(/EAClon/assets/jd_sims_ims.jpg);
     }
     .jd_gamecardapex{
         background-image: linear-gradient(90deg, var(--gradient-main-transparency) 0%,
-        var(--gradient-second-transparency) 100%),url(/jd_imgs/jd_apex_img.jpg);
+        var(--gradient-second-transparency) 100%),url(/EAClon/assets/jd_apex_img.jpg);
     }
     
 }
@@ -192,42 +192,42 @@
     
 }
 .jd_gamecardufc{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/jd_imgs/jd_ufc_img.jpg);
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/EAClon/assets/jd_ufc_img.jpg);
     .jd_game_logo{
         position: relative;
         width: 50%;
     }
 }
 .jd_gamecardfc{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/jd_imgs/jd_fc24_img.jpeg);
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/EAClon/assets/jd_fc24_img.jpeg);
     .jd_game_logo{
         position: relative;
         width: 50%;
     }
 }
 .jd_gamecardf1{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/jd_imgs/jd_f123_img.jpg);
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/EAClon/assets/jd_f123_img.jpg);
     .jd_game_logo{
         position: relative;
         width: 50%;
     }
 }
 .jd_gamecardnfs{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/jd_imgs/jd_nfs_img.png);
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%),url(/EAClon/assets/jd_nfs_img.png);
     .jd_game_logo{
         position: relative;
         width: 50%;
     }
 }
 .jd_gamecardsims{
-    background-image:linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%), url(/jd_imgs/jd_sims_ims.jpg);
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%), url(/EAClon/assets/jd_sims_ims.jpg);
     .jd_game_logo{
         position: relative;
         width: 50%;
     }
 }
 .jd_gamecardapex {
-    background-image:linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%), url(/jd_imgs/jd_apex_img.jpg);
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)100%), url(/EAClon/assets/jd_apex_img.jpg);
     /* background: rgba(0,0,0,0.2); */
     .jd_game_logo{
         position: relative;
