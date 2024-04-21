@@ -30,6 +30,10 @@
         display: grid;
         grid-template-columns: repeat(2,1fr) !important;
     }
+    .jd_title_text{
+        margin: 1rem;
+        font-size: 28px;
+    }
 }
 @media (max-width:768px){
     .jd_rowcard{
@@ -50,6 +54,20 @@
         transition: ease-in-out 0.3s;
     }
 }
+@media(max-width:510px){
+    .jd_gamecard{
+        width: 450px !important;
+        height: 450px !important;
+    }
+    .jd_button{
+        width: 450px; 
+        max-width: none !important;
+        padding: 16px 24px;
+        margin: 0 auto;
+        transition: ease-in-out 0.3s;
+    }
+
+}
 .jd_title{
     display: grid;
     align-items: center;
@@ -61,6 +79,7 @@
 }
 .jd_title_text{
     margin: 1rem;
+    line-height: 37.8px;
 }
 .jd_cards{
     display: grid;
@@ -79,6 +98,7 @@
     border-width: 2px;
     border-color: var(--main-color);
     padding: 16px 24px;
+    margin-top: 1rem;
     max-width: 170px;
     transition: 0.3s ease-in-out;
  
@@ -102,6 +122,7 @@
     height: 350.28px;
     margin: 14px;
     background-size: cover;
+    text-decoration: none !important;
 }
 .jd_gamecardinfo{
     display: flex;
@@ -167,6 +188,7 @@
     align-items: center;
     justify-content: center;
     display: none;
+    
     
 }
 .jd_gamecardufc{
