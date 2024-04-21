@@ -30,7 +30,8 @@
   }
   .jd_title_text {
     margin: 1rem;
-    font-size: 28px;
+    font-size: 2rem;
+    color: var(--main-color);
   }
 }
 @media (max-width: 768px) {
@@ -70,7 +71,7 @@
   justify-content: center;
   font-family: var(--font);
   font-size: 38px;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 .jd_title_text {
   margin: 1rem;
@@ -83,7 +84,9 @@
 .jd_rowcard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: inherit;
+  margin: 0;
+  padding: 0;
+  gap: 2.25rem;
 }
 .jd_button {
   display: grid;
@@ -93,9 +96,9 @@
   border-width: 2px;
   border-color: var(--main-color);
   padding: 16px 24px;
-  margin-top: 1rem;
+  margin-top: 2rem;
   max-width: 170px;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .jd_button:hover {
   transform: scale(1.05);
@@ -105,15 +108,19 @@
 }
 
 .jd_juegos_destacados {
+  margin: 0 auto;
   display: grid;
   justify-items: center;
+  padding: 3rem 0;
+  width: 100%;
+  max-width: 1140px;
 }
 
 .jd_gamecard {
   display: block;
   width: 350.28px;
   height: 350.28px;
-  margin: 14px;
+  /* margin: 14px; */
   background-size: cover;
   text-decoration: none !important;
 }
@@ -346,7 +353,7 @@ html {
 #user-section {
   position: absolute;
   width: 100%;
-  z-index: 35;
+  z-index: 1000000;
   background-color: var(--main-color);
   height: 370px;
   display: flex;
@@ -406,7 +413,7 @@ html {
 #help-section {
   position: absolute;
   width: 100%;
-  z-index: 35;
+  z-index: 1000000;
   background-color: var(--main-color);
   height: 370px;
   display: flex;
@@ -483,6 +490,7 @@ nav {
   width: 100%;
   height: 56px;
   background-color: var(--second-color);
+  z-index: 10000;
 }
 .menu-todosJuegos {
   margin-right: 2rem;
@@ -510,7 +518,7 @@ nav {
   width: 25%;
   height: 80vh;
   padding: 3rem 3rem 3rem 2rem;
-  z-index: 30;
+  z-index: 10000000;
   overflow-y: scroll;
   transform: translateX(-100%);
   transition: all ease-in-out 0.2s;
@@ -524,7 +532,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 20;
+  z-index: 100000;
   display: none;
 }
 
