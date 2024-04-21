@@ -363,18 +363,11 @@ nav {
 .div-prueba {
   width: 100%;
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0 2rem;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
-}
-
-.hero-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  justify-content: space-between;
 }
 
 .left-side {
@@ -895,6 +888,10 @@ li {
   .menu-todosJuegos {
     display: none;
   }
+  .miniBanner-container {
+    width: 100%;
+    margin: 0 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -913,7 +910,7 @@ li {
     padding: 2rem 0;
   }
   .right-side {
-    width: 90%;
+    width: 100%;
     order: 1;
   }
 
@@ -922,7 +919,7 @@ li {
     object-fit: contain;
   }
   .left-side {
-    width: 90%;
+    width: 100%;
 
     order: 2;
   }
