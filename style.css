@@ -896,12 +896,13 @@ li {
   height: 96px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .miniBanner-container {
   width: 100%;
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
