@@ -50,7 +50,7 @@ function lateralMenuJuegos() {
 function closeLateralJuegos() {
   todosJuegosLateral.style.transform = "translateX(-100%)";
   overlayElement.style.display = "none";
-  body.style.overflow = "visible";
+  body.style.overflow = "auto";
   blackHeader.style.position = "static";
   navbar.style.transform = "translateY(0)";
 }
@@ -70,7 +70,7 @@ function openSideMenu() {
   navbar.style.transform = "translateY(40px)";
   sideMenuElement.style.transform = "translateX(0)";
   overlayElement.style.display = "block";
-  // body.style.overflow = "hidden";
+  body.style.overflow = "hidden";
 }
 
 function closeSideMenu() {
@@ -78,7 +78,7 @@ function closeSideMenu() {
   navbar.style.transform = "translateY(0)";
   sideMenuElement.style.transform = "translateX(-100%)";
   overlayElement.style.display = "none";
-  // body.style.overflow = "visible";
+  body.style.overflow = "auto";
 }
 
 openSideMenuBtn.addEventListener("click", openSideMenu);
