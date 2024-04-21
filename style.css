@@ -938,6 +938,12 @@ hr{
     padding-right: 0;
     padding-left: 50px;
    }
+
+   #act_boton_mas{
+    max-width: 416px;
+    width: 370px;
+    text-align: center;
+}
 }
 
 @media (max-width:684px){
