@@ -638,7 +638,7 @@ nav {
   margin: 0 auto;
   width: 100%;
   height: 540px;
-  background-image: url("/assets/fc24-tots-hub-bundesliga-hero-med-mg-7x2-xl.jpg.adapt.crop2x1.1023w.jpg");
+  background-image: url("./assets/fc24-tots-hub-bundesliga-hero-med-mg-7x2-xl.jpg.adapt.crop2x1.1023w.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -888,7 +888,7 @@ li {
 }
 
 .miniBanner {
-  background-image: url(/assets/f124-pcc-general-light-xl.jpg.adapt.1920w.jpg);
+  background-image: url("./assets/f124-pcc-general-light-xl.jpg.adapt.1920w.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
