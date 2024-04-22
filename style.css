@@ -666,9 +666,6 @@ body{
             width: 450px;
         }
     }
-    .ea-play-price-card-logo-and-prices svg{
-        width: 20% !important;
-    }
     .sidebar-ea-play-close-btn{
         display: block !important;
     }
@@ -685,11 +682,11 @@ body{
         flex-direction: column;
         gap: 1rem;
         padding: 1rem 2rem 4rem 2rem !important;
-
+        
         a{
             width: 80%;
         }
-    
+        
         .parental-banner-text{
             font-size: 26px;
             width: 100%;
@@ -704,6 +701,9 @@ body{
     }
     .sidebar-ea-play-menu{
         width: 100% !important;
+        .ea-play-price-card-logo-and-prices svg{
+            width: 20% !important;
+        }
     }
     .slider-banner-ea-play{
         align-items: center;
