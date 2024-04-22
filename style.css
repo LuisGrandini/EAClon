@@ -695,7 +695,7 @@ body{
     }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 768px) {
     .ea-play-menu, .banner-ea-play-container{
         overflow: hidden;
     }
