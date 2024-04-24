@@ -1923,6 +1923,13 @@ li {
 
 /*Aqui vamos a empezar con las media querys*/
 @media (max-width: 1025px) {
+  .banner-ea-play-top{
+    background-image: linear-gradient(
+        145deg,
+        var(--gradient-main) 25%,
+        var(--gradient-second) 100%
+      );
+  }
   .text-and-slider-container-ea-play {
     width: 100%;
     flex-direction: column;
@@ -2007,7 +2014,7 @@ body {
 .actualizacion {
   font-family: var(--font);
   height: fit-content;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .act_top_container {
@@ -2480,11 +2487,37 @@ li {
 }
 
 @media (max-width: 1024px) {
+  #footer-top p{
+    padding: 1rem 2rem;
+    margin: 0;
+    justify-content: center;
+    text-align: left;
+  }
+  #footer-mid{
+    position: relative;
+    padding: 1rem 2rem;
+    justify-content: left;
+    #footer-mid-links{
+      justify-content: left;
+    }
+    #join{
+      text-align: start;
+      padding-left: 1rem;
+    }
+  }
   #footer-bottom {
     flex-wrap: wrap;
+    padding: 1rem 0;
+    #footer-logo-links{
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
   }
   #footer-region-language {
-    margin-left: 12%;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    width: 80%;
   }
   #div-region,
   #div-language {
@@ -2498,11 +2531,20 @@ li {
   #div-language ul {
     margin: 0;
   }
+
+  #footer-legal-agreement{
+    padding: 1rem;
+    justify-content: start;
+  }
+
 }
 
 @media (max-width: 768px) {
   #footer-mid-links {
     flex-wrap: wrap;
+  }
+  .footer-network{
+    justify-content: start;
   }
 
   #footer-region-language {
