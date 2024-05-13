@@ -1488,7 +1488,7 @@ li {
   flex-direction: column;
 }
 .ea-play-menu-hidden-info {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .ea-play-menu-hidden-info h3 {
@@ -1708,7 +1708,7 @@ li {
   }
   .sale-btn:hover {
     transform: scaleX(0.98);
-    background-color: var(--electronic-tag-light);
+    background-color: #ff6262;
     cursor: pointer;
   }
   .info-tag {
@@ -2001,6 +2001,11 @@ li {
       height: 225px;
       background-size: cover;
     }
+  }
+}
+@media (max-width: 412px) {
+  .glide__arrow{
+    display: none !important;
   }
 }
 
@@ -2508,7 +2513,12 @@ li {
   #footer-bottom {
     flex-wrap: wrap;
     padding: 1rem 0;
+<<<<<<< HEAD
     #footer-logo-links {
+=======
+    #footer-logo-links{
+      margin: 0rem 1rem;
+>>>>>>> 5029c77906c89b2f67b2e7dedc62bf53c52c08a8
       align-items: center;
       justify-content: center;
       width: 100%;
