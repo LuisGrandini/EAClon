@@ -1923,12 +1923,12 @@ li {
 
 /*Aqui vamos a empezar con las media querys*/
 @media (max-width: 1025px) {
-  .banner-ea-play-top{
+  .banner-ea-play-top {
     background-image: linear-gradient(
-        145deg,
-        var(--gradient-main) 25%,
-        var(--gradient-second) 100%
-      );
+      145deg,
+      var(--gradient-main) 25%,
+      var(--gradient-second) 100%
+    );
   }
   .text-and-slider-container-ea-play {
     width: 100%;
@@ -2487,20 +2487,20 @@ li {
 }
 
 @media (max-width: 1024px) {
-  #footer-top p{
+  #footer-top p {
     padding: 1rem 2rem;
     margin: 0;
     justify-content: center;
     text-align: left;
   }
-  #footer-mid{
+  #footer-mid {
     position: relative;
     padding: 1rem 2rem;
     justify-content: left;
-    #footer-mid-links{
+    #footer-mid-links {
       justify-content: left;
     }
-    #join{
+    #join {
       text-align: start;
       padding-left: 1rem;
     }
@@ -2508,7 +2508,7 @@ li {
   #footer-bottom {
     flex-wrap: wrap;
     padding: 1rem 0;
-    #footer-logo-links{
+    #footer-logo-links {
       align-items: center;
       justify-content: center;
       width: 100%;
@@ -2532,18 +2532,17 @@ li {
     margin: 0;
   }
 
-  #footer-legal-agreement{
+  #footer-legal-agreement {
     padding: 1rem;
     justify-content: start;
   }
-
 }
 
 @media (max-width: 768px) {
   #footer-mid-links {
     flex-wrap: wrap;
   }
-  .footer-network{
+  .footer-network {
     justify-content: start;
   }
 
